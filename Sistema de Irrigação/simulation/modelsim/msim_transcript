@@ -1,0 +1,45 @@
+# Reading pref.tcl
+# do SistemaDeIrrigacao_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/Sistema\ de\ Irrigação {D:/Dev/Verilog/Sistema de Irrigação/comparador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:37:52 on May 19,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Dev/Verilog/Sistema de Irrigação" D:/Dev/Verilog/Sistema de Irrigação/comparador.v 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vlog-9) Problem while writing internal20180930A file "D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_temp/vlogxsbmec".
+# D:/Dev/Verilog/Sistema de Irrigação/comparador.v(1): Verilog Compiler exiting
+# End time: 23:37:52 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./SistemaDeIrrigacao_run_msim_rtl_verilog.do line 8
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/Sistema\ de\ Irrigação {D:/Dev/Verilog/Sistema de Irrigação/comparador.v}"
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:38:00 on May 19,2024
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
+# End time: 23:38:00 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# sqlite3_open_v2: No such file or directory
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:38:00 on May 19,2024
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
+# End time: 23:38:00 on May 19,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# sqlite3_open_v2: No such file or directory
+dataset reload -f
+# Dataset not found: 
