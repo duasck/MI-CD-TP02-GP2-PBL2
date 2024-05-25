@@ -1,36 +1,77 @@
-|d_ff
-q <= q.DB_MAX_OUTPUT_PORT_TYPE
-qbar <= qbar.DB_MAX_OUTPUT_PORT_TYPE
-d => d.IN2
-clk => clk.IN2
+|main
+H => H.IN2
+M => M.IN2
+L => L.IN2
+Ua => Ua.IN1
+Us => Us.IN1
+T => T.IN1
+switch => ~NO_FANOUT~
+rest => ~NO_FANOUT~
+Vs <= sistemaIrrigacao:irrigacao_inst.Vs
+Bs <= sistemaIrrigacao:irrigacao_inst.Bs
+Cheio <= sistemaNivel:nivel_inst.Cheio
+Medio <= sistemaNivel:nivel_inst.Medio
+Baixo <= sistemaNivel:nivel_inst.Baixo
+Vazio <= sistemaNivel:nivel_inst.Vazio
+Erro <= sistemaNivel:nivel_inst.Erro
+Alarme <= sistemaNivel:nivel_inst.Alarme
+Ve <= sistemaNivel:nivel_inst.Ve
 
 
-|d_ff|not_gate:not1
-f <= e.DB_MAX_OUTPUT_PORT_TYPE
-e => f.DATAIN
+|main|sistemaIrrigacao:irrigacao_inst
+H => B1.IN0
+H => A1.IN0
+M => B2.IN0
+M => A2.IN0
+M => B1.IN1
+M => A1.IN1
+L => B1.IN2
+L => B2.IN1
+L => A1.IN2
+L => A2.IN1
+Ua => A1.IN3
+Ua => A2.IN2
+Ua => B1.IN3
+Us => B1.IN4
+Us => B2.IN2
+Us => A1.IN4
+Us => A2.IN3
+T => A2.IN4
+T => B2.IN3
+Vs <= A3.DB_MAX_OUTPUT_PORT_TYPE
+Bs <= B3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|d_ff|nand_gate:nand1
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-a => c.IN0
-b => c.IN1
-
-
-|d_ff|nand_gate:nand2
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-a => c.IN0
-b => c.IN1
-
-
-|d_ff|nand_gate:nand3
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-a => c.IN0
-b => c.IN1
-
-
-|d_ff|nand_gate:nand4
-c <= c.DB_MAX_OUTPUT_PORT_TYPE
-a => c.IN0
-b => c.IN1
+|main|sistemaNivel:nivel_inst
+H => C1.IN0
+H => E3.IN0
+H => A1.IN0
+H => V1.IN0
+H => B1.IN0
+H => M1.IN0
+H => Ve1.IN0
+H => Ve2.IN0
+M => M1.IN1
+M => C1.IN1
+M => E2.IN0
+M => V1.IN1
+M => B1.IN1
+M => E3.IN1
+M => A1.IN1
+M => Ve1.IN1
+L => B1.IN2
+L => M1.IN2
+L => C1.IN2
+L => Ve2.IN1
+L => V1.IN2
+L => E2.IN1
+L => A2.IN1
+Cheio <= C1.DB_MAX_OUTPUT_PORT_TYPE
+Medio <= M1.DB_MAX_OUTPUT_PORT_TYPE
+Baixo <= B1.DB_MAX_OUTPUT_PORT_TYPE
+Vazio <= V1.DB_MAX_OUTPUT_PORT_TYPE
+Erro <= E4.DB_MAX_OUTPUT_PORT_TYPE
+Alarme <= A2.DB_MAX_OUTPUT_PORT_TYPE
+Ve <= Ve3.DB_MAX_OUTPUT_PORT_TYPE
 
 

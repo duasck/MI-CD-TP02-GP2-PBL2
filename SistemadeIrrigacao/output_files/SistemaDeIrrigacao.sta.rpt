@@ -1,5 +1,5 @@
 Timing Analyzer report for SistemaDeIrrigacao
-Fri May 24 23:09:35 2024
+Sat May 25 19:52:16 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -20,12 +20,11 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  12. Report TCCS
  13. Report RSKM
  14. Unconstrained Paths Summary
- 15. Clock Status Summary
- 16. Unconstrained Input Ports
- 17. Unconstrained Output Ports
- 18. Unconstrained Input Ports
- 19. Unconstrained Output Ports
- 20. Timing Analyzer Messages
+ 15. Unconstrained Input Ports
+ 16. Unconstrained Output Ports
+ 17. Unconstrained Input Ports
+ 18. Unconstrained Output Ports
+ 19. Timing Analyzer Messages
 
 
 
@@ -79,13 +78,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                          ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
 ----------------
@@ -118,13 +114,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------+
-; Minimum Pulse Width Summary    ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clk   ; -2.289 ; -2.289        ;
-+-------+--------+---------------+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
 
 
 -------------------
@@ -152,29 +145,24 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 3     ; 3    ;
-; Unconstrained Output Ports      ; 2     ; 2    ;
-; Unconstrained Output Port Paths ; 4     ; 4    ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 33    ; 33   ;
 +---------------------------------+-------+------+
 
 
-+-------------------------------------+
-; Clock Status Summary                ;
-+--------+-------+------+-------------+
-; Target ; Clock ; Type ; Status      ;
-+--------+-------+------+-------------+
-; clk    ; clk   ; Base ; Constrained ;
-+--------+-------+------+-------------+
-
-
 +---------------------------------------------------------------------------------------------------+
 ; Unconstrained Input Ports                                                                         ;
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; clk        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; d          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -183,8 +171,15 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; q           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; qbar        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Baixo       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Cheio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Medio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vazio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -193,8 +188,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; clk        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; d          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -203,8 +202,15 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; q           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; qbar        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Baixo       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Cheio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Medio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vazio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -214,7 +220,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri May 24 23:09:34 2024
+    Info: Processing started: Sat May 25 19:52:15 2024
 Info: Command: quartus_sta SistemaDeIrrigacao -c SistemaDeIrrigacao
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -223,29 +229,25 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Warning (335093): The Timing Analyzer is analyzing 1 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'SistemaDeIrrigacao.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info (332140): No fmax paths to report
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case minimum pulse width slack is -2.289
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -2.289              -2.289 clk 
+Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4675 megabytes
-    Info: Processing ended: Fri May 24 23:09:35 2024
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4676 megabytes
+    Info: Processing ended: Sat May 25 19:52:16 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

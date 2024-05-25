@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri May 24 23:09:31 2024
+Fitter Status : Successful - Sat May 25 19:52:12 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SistemaDeIrrigacao
-Top-level Entity Name : d_ff
+Top-level Entity Name : main
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 2 / 240 ( < 1 % )
-Total pins : 4 / 80 ( 5 % )
+Total logic elements : 11 / 240 ( 5 % )
+Total pins : 17 / 80 ( 21 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

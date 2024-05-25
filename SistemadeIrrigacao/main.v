@@ -1,6 +1,6 @@
-module main(H, M, L, Ua, Us, T, Vs, Bs, Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve);
+module main(H, M, L, Ua, Us, T, switch, rest, Vs, Bs, Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve);
 
-	input H, M, L, Ua, Us, T;
+	input H, M, L, Ua, Us, T, switch, rest;
 	output Vs, Bs, Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve;
 
 	// Instancia do módulo de irrigação
