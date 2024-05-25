@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SistemaDeIrrigacao
-Sun May 19 23:33:29 2024
+Fri May 24 23:09:29 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,8 +13,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +42,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun May 19 23:33:29 2024       ;
+; Analysis & Synthesis Status ; Successful - Fri May 24 23:09:29 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; SistemaDeIrrigacao                          ;
-; Top-level Entity Name       ; comparador                                  ;
+; Top-level Entity Name       ; d_ff                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 9                                           ;
-; Total pins                  ; 11                                          ;
+; Total logic elements        ; 2                                           ;
+; Total pins                  ; 4                                           ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -59,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EPM240T100C5       ;                    ;
-; Top-level entity name                                            ; comparador         ; SistemaDeIrrigacao ;
+; Top-level entity name                                            ; d_ff               ; SistemaDeIrrigacao ;
 ; Family name                                                      ; MAX II             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -140,57 +141,70 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
-; comparador.v                     ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/Sistema de Irrigação/comparador.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; d_ff.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/Sistema de Irrigação/d_ff.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Total logic elements                        ; 9     ;
-;     -- Combinational with no register       ; 9     ;
-;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 0     ;
-;                                             ;       ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 5     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- 2 input functions                    ; 2     ;
-;     -- 1 input functions                    ; 0     ;
-;     -- 0 input functions                    ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 9     ;
-;     -- arithmetic mode                      ; 0     ;
-;     -- qfbk mode                            ; 0     ;
-;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 11    ;
-; Maximum fan-out node                        ; a[0]  ;
-; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 33    ;
-; Average fan-out                             ; 1.65  ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Total logic elements                        ; 2                   ;
+;     -- Combinational with no register       ; 2                   ;
+;     -- Register only                        ; 0                   ;
+;     -- Combinational with a register        ; 0                   ;
+;                                             ;                     ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 0                   ;
+;     -- 3 input functions                    ; 2                   ;
+;     -- 2 input functions                    ; 0                   ;
+;     -- 1 input functions                    ; 0                   ;
+;     -- 0 input functions                    ; 0                   ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 2                   ;
+;     -- arithmetic mode                      ; 0                   ;
+;     -- qfbk mode                            ; 0                   ;
+;     -- register cascade mode                ; 0                   ;
+;     -- synchronous clear/load mode          ; 0                   ;
+;     -- asynchronous clear/load mode         ; 0                   ;
+;                                             ;                     ;
+; Total registers                             ; 0                   ;
+; I/O pins                                    ; 4                   ;
+; Maximum fan-out node                        ; nand_gate:nand3|c~1 ;
+; Maximum fan-out                             ; 3                   ;
+; Total fan-out                               ; 8                   ;
+; Average fan-out                             ; 1.33                ;
++---------------------------------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |comparador                ; 9 (9)       ; 0            ; 0          ; 11   ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |comparador         ; comparador  ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name   ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+-------------+--------------+
+; |d_ff                      ; 2 (0)       ; 0            ; 0          ; 4    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |d_ff                 ; d_ff        ; work         ;
+;    |nand_gate:nand3|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |d_ff|nand_gate:nand3 ; nand_gate   ; work         ;
+;    |nand_gate:nand4|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |d_ff|nand_gate:nand4 ; nand_gate   ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; nand_gate:nand3|c~0                                    ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -214,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun May 19 23:33:19 2024
+    Info: Processing started: Fri May 24 23:09:20 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -225,17 +239,34 @@ Info (12021): Found 1 design units, including 1 entities, in source file sistema
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
     Info (12023): Found entity 1: main File: D:/Dev/Verilog/Sistema de Irrigação/main.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparador.v
-    Info (12023): Found entity 1: comparador File: D:/Dev/Verilog/Sistema de Irrigação/comparador.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file contador.v
-Info (12127): Elaborating entity "comparador" for the top level hierarchy
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 9 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4699 megabytes
-    Info: Processing ended: Sun May 19 23:33:29 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (12023): Found entity 1: comparador File: D:/Dev/Verilog/Sistema de Irrigação/comparador.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file contador.v
+    Info (12023): Found entity 1: contador File: D:/Dev/Verilog/Sistema de Irrigação/contador.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file somadorcompleto.v
+    Info (12023): Found entity 1: somadorcompleto File: D:/Dev/Verilog/Sistema de Irrigação/somadorcompleto.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file somador4b.v
+    Info (12023): Found entity 1: somador4b File: D:/Dev/Verilog/Sistema de Irrigação/somador4b.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file bit_counter.v
+Info (12021): Found 3 design units, including 3 entities, in source file d_ff.v
+    Info (12023): Found entity 1: nand_gate File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 1
+    Info (12023): Found entity 2: not_gate File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 9
+    Info (12023): Found entity 3: d_ff File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file jkff_gate.v
+    Info (12023): Found entity 1: jkff_gate File: D:/Dev/Verilog/Sistema de Irrigação/jkff_gate.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(21): created implicit net for "dbar" File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(22): created implicit net for "x" File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(23): created implicit net for "y" File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 23
+Info (12127): Elaborating entity "d_ff" for the top level hierarchy
+Info (12128): Elaborating entity "not_gate" for hierarchy "not_gate:not1" File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 21
+Info (12128): Elaborating entity "nand_gate" for hierarchy "nand_gate:nand1" File: D:/Dev/Verilog/Sistema de Irrigação/d_ff.v Line: 22
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 2 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4693 megabytes
+    Info: Processing ended: Fri May 24 23:09:29 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:27
 
 

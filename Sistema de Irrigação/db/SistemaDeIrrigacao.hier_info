@@ -1,30 +1,36 @@
-|comparador
-a[0] => I4.IN0
-a[0] => S5.IN3
-a[0] => S10.IN3
-a[1] => I3.IN0
-a[1] => S4.IN2
-a[1] => S9.IN2
-a[2] => I2.IN0
-a[2] => S3.IN1
-a[2] => S8.IN1
-a[3] => I1.IN0
-a[3] => S2.IN0
-a[3] => S7.IN0
-b[0] => I4.IN1
-b[0] => S10.IN4
-b[0] => S5.IN4
-b[1] => I3.IN1
-b[1] => S9.IN3
-b[1] => S4.IN3
-b[2] => I2.IN1
-b[2] => S8.IN2
-b[2] => S3.IN2
-b[3] => I1.IN1
-b[3] => S7.IN1
-b[3] => S2.IN1
-aeqb <= S1.DB_MAX_OUTPUT_PORT_TYPE
-agtb <= S6.DB_MAX_OUTPUT_PORT_TYPE
-altb <= S11.DB_MAX_OUTPUT_PORT_TYPE
+|d_ff
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= qbar.DB_MAX_OUTPUT_PORT_TYPE
+d => d.IN2
+clk => clk.IN2
+
+
+|d_ff|not_gate:not1
+f <= e.DB_MAX_OUTPUT_PORT_TYPE
+e => f.DATAIN
+
+
+|d_ff|nand_gate:nand1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => c.IN0
+b => c.IN1
+
+
+|d_ff|nand_gate:nand2
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => c.IN0
+b => c.IN1
+
+
+|d_ff|nand_gate:nand3
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => c.IN0
+b => c.IN1
+
+
+|d_ff|nand_gate:nand4
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+a => c.IN0
+b => c.IN1
 
 

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY comparador
+set_global_assignment -name TOP_LEVEL_ENTITY d_ff
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -61,3 +61,8 @@ set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
 set_global_assignment -name VERILOG_FILE main.v
 set_global_assignment -name VERILOG_FILE comparador.v
 set_global_assignment -name VERILOG_FILE contador.v
+set_global_assignment -name VERILOG_FILE somadorcompleto.v
+set_global_assignment -name VERILOG_FILE somador4b.v
+set_global_assignment -name VERILOG_FILE bit_counter.v
+set_global_assignment -name VERILOG_FILE d_ff.v
+set_global_assignment -name VERILOG_FILE jkff_gate.v

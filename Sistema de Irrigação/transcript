@@ -1,0 +1,45 @@
+vsim a
+# vsim a 
+# Start time: 12:14:06 on May 24,2024
+# ** Error: (vsim-3170) Could not find 'a'.
+#         Searched libraries:
+#             D:/Dev/Verilog/Sistema de Irrigação/work
+# Error loading design
+# End time: 12:14:07 on May 24,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+vsim a
+# vsim a 
+# Start time: 12:14:07 on May 24,2024
+# ** Error: (vsim-3170) Could not find 'a'.
+#         Searched libraries:
+#             D:/Dev/Verilog/Sistema de Irrigação/work
+# Error loading design
+# End time: 12:14:08 on May 24,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim a
+# vsim a 
+# Start time: 12:14:11 on May 24,2024
+# ** Error: (vsim-3170) Could not find 'a'.
+#         Searched libraries:
+#             D:/Dev/Verilog/Sistema de Irrigação/work
+# Error loading design
+# End time: 12:14:12 on May 24,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim a
+# vsim a 
+# Start time: 12:15:00 on May 24,2024
+# ** Error: (vsim-3170) Could not find 'a'.
+#         Searched libraries:
+#             D:/Dev/Verilog/Sistema de Irrigação/work
+# Error loading design
+# End time: 12:15:00 on May 24,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+vsim a
+# vsim a 
+# Start time: 12:15:01 on May 24,2024
+# ** Error: (vsim-3170) Could not find 'a'.
+#         Searched libraries:
+#             D:/Dev/Verilog/Sistema de Irrigação/work
+# Error loading design
+# End time: 12:15:02 on May 24,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
