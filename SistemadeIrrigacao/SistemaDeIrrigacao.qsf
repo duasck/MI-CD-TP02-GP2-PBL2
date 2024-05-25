@@ -66,3 +66,7 @@ set_global_assignment -name VERILOG_FILE somador4b.v
 set_global_assignment -name VERILOG_FILE bit_counter.v
 set_global_assignment -name VERILOG_FILE d_ff.v
 set_global_assignment -name VERILOG_FILE jkff_gate.v
+set_global_assignment -name VERILOG_FILE two2four.v
+set_global_assignment -name VERILOG_FILE counter4Bit.v
+set_global_assignment -name VERILOG_FILE ring_counter.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
