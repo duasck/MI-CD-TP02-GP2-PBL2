@@ -26,3 +26,5 @@ and A1 (Aa, UsInv, Ua, Hinv, Minv, L);
 and A2 (Ab, UsInv, Ua, T, M, L);
 or A3 (Vs, Aa, Ab);
 endmodule
+
+//FUNCIONA!!

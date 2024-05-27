@@ -1,3 +1,0 @@
-module contador (H, M, L, Ua, Us, T, Vs, Bs);
-
-endmodule

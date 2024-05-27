@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SistemaDeIrrigacao
-Sat May 25 19:52:10 2024
+Mon May 27 00:53:32 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,8 +13,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "dff_sync:ff3"
+ 11. Port Connectivity Checks: "dff_sync:ff2"
+ 12. Port Connectivity Checks: "dff_sync:ff1"
+ 13. Port Connectivity Checks: "dff_sync:ff0"
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -41,13 +47,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 25 19:52:10 2024       ;
+; Analysis & Synthesis Status ; Successful - Mon May 27 00:53:32 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; SistemaDeIrrigacao                          ;
-; Top-level Entity Name       ; main                                        ;
+; Top-level Entity Name       ; shif                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 11                                          ;
-; Total pins                  ; 17                                          ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 6                                           ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -59,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EPM240T100C5       ;                    ;
-; Top-level entity name                                            ; main               ; SistemaDeIrrigacao ;
+; Top-level entity name                                            ; shif               ; SistemaDeIrrigacao ;
 ; Family name                                                      ; MAX II             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -140,15 +146,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
-; sistemaNivel.v                   ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/sistemaNivel.v     ;         ;
-; sistemaIrrigacao.v               ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/sistemaIrrigacao.v ;         ;
-; main.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/main.v             ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                               ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; dff_sync.v                       ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/dff_sync.v ;         ;
+; shif.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/shif.v     ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -156,20 +161,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 11    ;
-;     -- Combinational with no register       ; 11    ;
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
 ;     -- Register only                        ; 0     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 2     ;
-;     -- 3 input functions                    ; 9     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
 ;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 11    ;
+;     -- normal mode                          ; 0     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -177,24 +182,31 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
-; I/O pins                                    ; 17    ;
-; Maximum fan-out node                        ; L     ;
-; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 44    ;
-; Average fan-out                             ; 1.57  ;
+; I/O pins                                    ; 6     ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
-+--------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node           ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                   ; Entity Name      ; Library Name ;
-+--------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------+------------------+--------------+
-; |main                                ; 11 (0)      ; 0            ; 0          ; 17   ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main                                 ; main             ; work         ;
-;    |sistemaIrrigacao:irrigacao_inst| ; 4 (4)       ; 0            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|sistemaIrrigacao:irrigacao_inst ; sistemaIrrigacao ; work         ;
-;    |sistemaNivel:nivel_inst|         ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|sistemaNivel:nivel_inst         ; sistemaNivel     ; work         ;
-+--------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------+------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |shif                      ; 0 (0)       ; 0            ; 0          ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |shif               ; shif        ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; dff_sync:ff3|q                        ; Stuck at GND due to stuck port data_in ;
+; dff_sync:ff2|q                        ; Stuck at GND due to stuck port data_in ;
+; dff_sync:ff1|q                        ; Stuck at GND due to stuck port data_in ;
+; dff_sync:ff0|q                        ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -212,13 +224,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_sync:ff3"                                                                                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_sync:ff2"                                                                                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_sync:ff1"                                                                                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dff_sync:ff0"                                                                                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat May 25 19:52:00 2024
+    Info: Processing started: Mon May 27 00:53:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -228,47 +280,39 @@ Info (12021): Found 1 design units, including 1 entities, in source file sistema
     Info (12023): Found entity 1: sistemaIrrigacao File: D:/Dev/Verilog/SistemadeIrrigacao/sistemaIrrigacao.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
     Info (12023): Found entity 1: main File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file comparador.v
-    Info (12023): Found entity 1: comparador File: D:/Dev/Verilog/SistemadeIrrigacao/comparador.v Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file contador.v
-    Info (12023): Found entity 1: contador File: D:/Dev/Verilog/SistemadeIrrigacao/contador.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file somadorcompleto.v
-    Info (12023): Found entity 1: somadorcompleto File: D:/Dev/Verilog/SistemadeIrrigacao/somadorcompleto.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file somador4b.v
-    Info (12023): Found entity 1: somador4b File: D:/Dev/Verilog/SistemadeIrrigacao/somador4b.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file bit_counter.v
-Info (12021): Found 3 design units, including 3 entities, in source file d_ff.v
-    Info (12023): Found entity 1: nand_gate File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 1
-    Info (12023): Found entity 2: not_gate File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 9
-    Info (12023): Found entity 3: d_ff File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 17
-Info (12021): Found 1 design units, including 1 entities, in source file jkff_gate.v
-    Info (12023): Found entity 1: jkff_gate File: D:/Dev/Verilog/SistemadeIrrigacao/jkff_gate.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file two2four.v
-    Info (12023): Found entity 1: two2four File: D:/Dev/Verilog/SistemadeIrrigacao/two2four.v Line: 1
-Warning (12018): Entity "DFF" will be ignored because it conflicts with Quartus Prime primitive name File: D:/Dev/Verilog/SistemadeIrrigacao/counter4Bit.v Line: 1
-Info (12021): Found 3 design units, including 3 entities, in source file counter4bit.v
-    Info (12023): Found entity 1: FullAdder File: D:/Dev/Verilog/SistemadeIrrigacao/counter4Bit.v Line: 15
-    Info (12023): Found entity 2: counter4Bit File: D:/Dev/Verilog/SistemadeIrrigacao/counter4Bit.v Line: 25
-Info (12021): Found 2 design units, including 2 entities, in source file ring_counter.v
-    Info (12023): Found entity 1: d_flip_flop File: D:/Dev/Verilog/SistemadeIrrigacao/ring_counter.v Line: 1
-    Info (12023): Found entity 2: ring_counter File: D:/Dev/Verilog/SistemadeIrrigacao/ring_counter.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(21): created implicit net for "dbar" File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(22): created implicit net for "x" File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at d_ff.v(23): created implicit net for "y" File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 23
-Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "sistemaIrrigacao" for hierarchy "sistemaIrrigacao:irrigacao_inst" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 7
-Info (12128): Elaborating entity "sistemaNivel" for hierarchy "sistemaNivel:nivel_inst" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file decod7seg.v
+    Info (12023): Found entity 1: decod7seg File: D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ffd.v
+    Info (12023): Found entity 1: ffd File: D:/Dev/Verilog/SistemadeIrrigacao/ffd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dff_sync.v
+    Info (12023): Found entity 1: dff_sync File: D:/Dev/Verilog/SistemadeIrrigacao/dff_sync.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shif.v
+    Info (12023): Found entity 1: shif File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 1
+Info (12127): Elaborating entity "shif" for the top level hierarchy
+Info (12128): Elaborating entity "dff_sync" for hierarchy "dff_sync:ff0" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 7
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "s0" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
+    Warning (13410): Pin "s1" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
+    Warning (13410): Pin "s2" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
+    Warning (13410): Pin "s3" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "switch" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 3
-    Warning (15610): No output dependent on input pin "rest" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 3
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Sat May 25 19:52:10 2024
+    Warning (15610): No output dependent on input pin "clk" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 3
+    Warning (15610): No output dependent on input pin "d" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 3
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 4 output pins
+Info (144001): Generated suppressed messages file D:/Dev/Verilog/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4701 megabytes
+    Info: Processing ended: Mon May 27 00:53:32 2024
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:30
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Dev/Verilog/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg.
 
 

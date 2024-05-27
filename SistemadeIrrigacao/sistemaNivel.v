@@ -1,7 +1,7 @@
 module sistemaNivel (H, M, L, Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve);
 
 input H, M, L;
-
+//FUNCIONA!!
 output Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve;
 
 

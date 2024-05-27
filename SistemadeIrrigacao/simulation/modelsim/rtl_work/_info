@@ -1,10 +1,35 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim
+Z0 dD:/Dev/Verilog/SistemadeIrrigacao/simulation/modelsim
+vdecod7seg
+!s110 1716777146
+!i10b 1
+!s100 e7iJB:_2UOD<aYAjaSgTN2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IT9276[=[RJ?zzGOg9`LCP1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1716777106
+8D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v
+FD:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v
+!i122 0
+L0 1 13
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1716777146.000000
+!s107 D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Dev/Verilog/SistemadeIrrigacao|D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Dev/Verilog/SistemadeIrrigacao
+tCvgOpt 0

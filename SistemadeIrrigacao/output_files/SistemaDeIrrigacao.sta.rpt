@@ -1,5 +1,5 @@
 Timing Analyzer report for SistemaDeIrrigacao
-Sat May 25 19:52:16 2024
+Mon May 27 00:53:38 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -20,11 +20,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  12. Report TCCS
  13. Report RSKM
  14. Unconstrained Paths Summary
- 15. Unconstrained Input Ports
- 16. Unconstrained Output Ports
- 17. Unconstrained Input Ports
- 18. Unconstrained Output Ports
- 19. Timing Analyzer Messages
+ 15. Timing Analyzer Messages
 
 
 
@@ -145,73 +141,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 33    ; 33   ;
-; Unconstrained Output Ports      ; 9     ; 9    ;
-; Unconstrained Output Port Paths ; 33    ; 33   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Baixo       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Cheio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Medio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Vazio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Baixo       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Cheio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Medio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Vazio       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -220,7 +154,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat May 25 19:52:15 2024
+    Info: Processing started: Mon May 27 00:53:37 2024
 Info: Command: quartus_sta SistemaDeIrrigacao -c SistemaDeIrrigacao
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -243,11 +177,11 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4676 megabytes
-    Info: Processing ended: Sat May 25 19:52:16 2024
+    Info: Peak virtual memory: 4675 megabytes
+    Info: Processing ended: Mon May 27 00:53:38 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

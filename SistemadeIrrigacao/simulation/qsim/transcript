@@ -1,13 +1,33 @@
 # do SistemaDeIrrigacao.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:39:32 on May 25,2024
+# Start time: 00:56:26 on May 27,2024
 # vlog -work work SistemaDeIrrigacao.vo 
-# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/qsim/work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "D:/Dev/Verilog/Sistema de Irrigação/simulation/qsim/work/_temp/vlog459b37".
-# SistemaDeIrrigacao.vo(32): Verilog Compiler exiting
-# End time: 18:39:32 on May 25,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Executing ONERROR command at macro ./SistemaDeIrrigacao.do line 3
+# -- Compiling module shif
+# 
+# Top level modules:
+# 	shif
+# End time: 00:56:26 on May 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:56:26 on May 27,2024
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module shif_vlg_vec_tst
+# 
+# Top level modules:
+# 	shif_vlg_vec_tst
+# End time: 00:56:26 on May 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.decod7seg_vlg_vec_tst 
+# Start time: 00:56:26 on May 27,2024
+# Loading work.decod7seg_vlg_vec_tst
+# Loading work.decod7seg
+# Loading maxii_ver.maxii_io
+# Loading maxii_ver.maxii_lcell
+# Loading maxii_ver.maxii_asynch_lcell
+# Loading maxii_ver.maxii_lcell_register
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(63)
+#    Time: 100 ns  Iteration: 0  Instance: /decod7seg_vlg_vec_tst
+# End time: 00:56:27 on May 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

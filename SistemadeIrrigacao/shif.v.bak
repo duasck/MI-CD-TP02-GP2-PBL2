@@ -1,0 +1,11 @@
+module shif (clk, d, s);
+
+	input clk, d;
+	output [3:0] s;
+	
+	dff_sync ff0 (.clk(clk),.reset(1), .d(d), .q(s[0]));
+	dff_sync ff1 (.clk(clk),.reset(1), .d(s[0]), .q(s[1]));
+	dff_sync ff2 (.clk(clk),.reset(1), .d(s[1]), .q(s[2]));
+	dff_sync ff3 (.clk(clk),.reset(1), .d(s[2]), .q(s[3]));
+	
+endmodule

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY shif
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -56,20 +56,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
-set_global_assignment -name VERILOG_FILE sistemaNivel.v
-set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
-set_global_assignment -name VERILOG_FILE main.v
-set_global_assignment -name VERILOG_FILE comparador.v
-set_global_assignment -name VERILOG_FILE contador.v
-set_global_assignment -name VERILOG_FILE somadorcompleto.v
-set_global_assignment -name VERILOG_FILE somador4b.v
-set_global_assignment -name VERILOG_FILE bit_counter.v
-set_global_assignment -name VERILOG_FILE d_ff.v
-set_global_assignment -name VERILOG_FILE jkff_gate.v
-set_global_assignment -name VERILOG_FILE two2four.v
-set_global_assignment -name VERILOG_FILE counter4Bit.v
-set_global_assignment -name VERILOG_FILE ring_counter.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_location_assignment PIN_43 -to Alarme
 set_location_assignment PIN_86 -to Erro
 set_location_assignment PIN_42 -to Ua
@@ -81,3 +67,22 @@ set_location_assignment PIN_30 -to Us
 set_location_assignment PIN_54 -to Ve
 set_location_assignment PIN_33 -to switch
 set_location_assignment PIN_52 -to rest
+set_location_assignment PIN_90 -to a
+set_location_assignment PIN_70 -to b
+set_location_assignment PIN_41 -to c
+set_location_assignment PIN_98 -to d
+set_location_assignment PIN_100 -to e
+set_location_assignment PIN_92 -to f
+set_location_assignment PIN_39 -to g
+set_location_assignment PIN_88 -to d1
+set_location_assignment PIN_66 -to d2
+set_location_assignment PIN_68 -to d3
+set_location_assignment PIN_37 -to d4
+set_global_assignment -name VERILOG_FILE sistemaNivel.v
+set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
+set_global_assignment -name VERILOG_FILE main.v
+set_global_assignment -name VERILOG_FILE decod7seg.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE ffd.v
+set_global_assignment -name VERILOG_FILE dff_sync.v
+set_global_assignment -name VERILOG_FILE shif.v

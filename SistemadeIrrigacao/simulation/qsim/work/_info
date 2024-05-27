@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,233 @@ z2
 !i10f 100
 cModel Technology
 dD:/Dev/Verilog/Sistema de Irrigação/simulation/qsim
+vdecod7seg
+Z0 !s110 1716777567
+!i10b 1
+!s100 G=RDB6<UUYVf@oeobPn^O1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRC2i4gGBhPDL^1dM<JS=a0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim
+w1716777565
+Z4 8SistemaDeIrrigacao.vo
+Z5 FSistemaDeIrrigacao.vo
+!i122 8
+L0 32 414
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1716777567.000000
+Z8 !s107 SistemaDeIrrigacao.vo|
+Z9 !s90 -work|work|SistemaDeIrrigacao.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdecod7seg_vlg_vec_tst
+R0
+!i10b 1
+!s100 ]h>S2m6BVba0T@PIA7h@n3
+R1
+IS^WJbTT66CX^Z2KH2VJPo1
+R2
+R3
+w1716777564
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 9
+L0 30 72
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vdff_sync
+Z16 !s110 1716780356
+!i10b 1
+!s100 P3BDiZ30]94l_^bcJ7T@H2
+R1
+I`=?`6KQPE<Sz^dVNSA6nF3
+R2
+R3
+w1716780354
+R4
+R5
+!i122 32
+Z17 L0 32 107
+R6
+r1
+!s85 0
+31
+Z18 !s108 1716780356.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdff_sync_vlg_vec_tst
+R16
+!i10b 1
+!s100 OQZJ3Xc6ah9_>ik@zI;co0
+R1
+IAMCM[z=MY99`O=77_XRXG2
+R2
+R3
+w1716780353
+R12
+R13
+!i122 33
+L0 30 50
+R6
+r1
+!s85 0
+31
+R18
+R14
+R15
+!i113 1
+R10
+R11
+vffd
+!s110 1716780156
+!i10b 1
+!s100 j22?H:aiRNbQfiM4fGQli2
+R1
+I[lJGcPHU3_lSE=n?9`b?Y3
+R2
+R3
+w1716780155
+R4
+R5
+!i122 28
+R17
+R6
+r1
+!s85 0
+31
+!s108 1716780156.000000
+R8
+R9
+!i113 1
+R10
+R11
+vffd_vlg_vec_tst
+!s110 1716780157
+!i10b 1
+!s100 M<Mmgb]`hb7VIea7E6n6c3
+R1
+ITW9dRV`@LnH1_0[H4^?J60
+R2
+R3
+w1716780154
+R12
+R13
+!i122 29
+L0 30 47
+R6
+r1
+!s85 0
+31
+!s108 1716780157.000000
+R14
+R15
+!i113 1
+R10
+R11
+vmain
+Z19 !s110 1716773345
+!i10b 1
+!s100 i]GBP7hS7X^H9^HeP84Fh3
+R1
+I8Z:A?faWl[>kdBj:zo5HS0
+R2
+R3
+w1716773343
+R4
+R5
+!i122 0
+L0 32 636
+R6
+r1
+!s85 0
+31
+Z20 !s108 1716773345.000000
+R8
+R9
+!i113 1
+R10
+R11
+vmain_vlg_vec_tst
+R19
+!i10b 1
+!s100 0zI:1hEN1MWP7C2>QVBg=1
+R1
+I`M6S1FH7a[i`3:O@V[38K1
+R2
+R3
+w1716773342
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 1
+L0 30 96
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vshif
+Z21 !s110 1716782186
+!i10b 1
+!s100 7MhlQ:h@C@;3DfVM_em2O3
+R1
+IhF<6>mXDoAoDXMW_z>^2_2
+R2
+R3
+w1716782184
+R4
+R5
+!i122 40
+L0 32 95
+R6
+r1
+!s85 0
+31
+Z22 !s108 1716782186.000000
+R8
+R9
+!i113 1
+R10
+R11
+vshif_vlg_vec_tst
+R21
+!i10b 1
+!s100 d]^9L?RRVFlb@WkYiL`eB0
+R1
+IgKeNLzQK5@jE7@X2d1fJO2
+R2
+R3
+w1716782183
+R12
+R13
+!i122 41
+L0 30 41
+R6
+r1
+!s85 0
+31
+R22
+R14
+R15
+!i113 1
+R10
+R11

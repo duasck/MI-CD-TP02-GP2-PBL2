@@ -10,70 +10,14 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/Sistema\ de\ Irrigação {D:/Dev/Verilog/Sistema de Irrigação/d_ff.v}
+# vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/SistemadeIrrigacao {D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:56:40 on May 23,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Dev/Verilog/Sistema de Irrigação" D:/Dev/Verilog/Sistema de Irrigação/d_ff.v 
-# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/_temp/vlogd388qj".
-# D:/Dev/Verilog/Sistema de Irrigação/d_ff.v(1): Verilog Compiler exiting
-# End time: 22:56:40 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./SistemaDeIrrigacao_run_msim_rtl_verilog.do line 8
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/Sistema\ de\ Irrigação {D:/Dev/Verilog/Sistema de Irrigação/d_ff.v}"
-dataset reload -f
-# Dataset not found: 
-cd {D:/Dev/Verilog/Sistema de Irrigação/simulation}
-# reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
-dataset reload -f
-# Dataset not found: 
-cd {D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim}
-# reading modelsim.ini
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-cd {D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work}
-# reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-dataset reload -f
-# Dataset not found: 
-# Load canceled
-vlib work
-vlog -reportprogress 300 -work work {D:/Dev/Verilog/Sistema de Irrigação/d_ff.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:32 on May 23,2024
-# vlog -reportprogress 300 -work work D:/Dev/Verilog/Sistema de Irrigação/d_ff.v 
-# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/work/_temp/vlog7vy3ii".
-# D:/Dev/Verilog/Sistema de Irrigação/d_ff.v(1): Verilog Compiler exiting
-# End time: 22:59:32 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlib work
-# ** Warning: (vlib-34) Library already exists at "work".
-vlog -reportprogress 300 -work work {D:/Dev/Verilog/Sistema de Irrigação/d_ff.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:36 on May 23,2024
-# vlog -reportprogress 300 -work work D:/Dev/Verilog/Sistema de Irrigação/d_ff.v 
-# init_dbinfo() DATABASE ERROR: (sqlite3_open D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/work/_lib.qdb): unable to open database file
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "D:/Dev/Verilog/Sistema de Irrigação/simulation/modelsim/rtl_work/work/_temp/vlogv3d5m1".
-# D:/Dev/Verilog/Sistema de Irrigação/d_ff.v(1): Verilog Compiler exiting
-# End time: 22:59:36 on May 23,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
+# Start time: 23:32:26 on May 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Dev/Verilog/SistemadeIrrigacao" D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v 
+# -- Compiling module decod7seg
+# 
+# Top level modules:
+# 	decod7seg
+# End time: 23:32:26 on May 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
