@@ -86,3 +86,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE ffd.v
 set_global_assignment -name VERILOG_FILE dff_sync.v
 set_global_assignment -name VERILOG_FILE shif.v
+set_global_assignment -name VERILOG_FILE mux2_1.v
+set_global_assignment -name VERILOG_FILE divisor_clk.v
+set_global_assignment -name VERILOG_FILE d_ff.v
+set_global_assignment -name VERILOG_FILE divisor_clk390.v
