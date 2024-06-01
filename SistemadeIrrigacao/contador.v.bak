@@ -1,0 +1,26 @@
+module contador (clk, r, s0, s1, s2, s3);
+
+	input clk, r;
+	output s0, s1, s2, s3;
+	
+
+	wire s0bar, s1bar, s2bar, s3bar;
+	
+	//inversores
+	
+	not sb0 (s0bar, s0);
+	not sb1 (s1bar, s1);
+	not sb2 (s2bar, s2);
+	not sb3 (s3bar, s3);
+	
+	//dff_sync (clk,reset,d,q)
+	
+	dff_sync c1 (.clk(clk), .reset(r), .d(0), .q(s0));
+	
+	dff_sync c2 (.clk(clk), .reset(r), .d(s0bar), .q(s1));
+	
+	dff_sync c3 (.clk(clk), .reset(r), .d(s1bar), .q(s2));
+	
+	dff_sync c4 (.clk(clk), .reset(r), .d(s2bar), .q(s3));
+	
+endmodule

@@ -19,19 +19,20 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/27/2024 00:56:12"
+// Generated on "05/31/2024 00:30:34"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          shif
+// Verilog Test Bench (with test vectors) for design :                          contador
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module shif_vlg_vec_tst();
+module contador_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg d;
+reg mode;
+reg r;
 // wires                                               
 wire s0;
 wire s1;
@@ -39,10 +40,11 @@ wire s2;
 wire s3;
 
 // assign statements (if any)                          
-shif i1 (
+contador i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
-	.d(d),
+	.mode(mode),
+	.r(r),
 	.s0(s0),
 	.s1(s1),
 	.s2(s2),
@@ -61,11 +63,16 @@ begin
 	#5000;
 end 
 
-// d
+// mode
 initial
 begin
-	d = 1'b1;
-	d = #10000 1'b0;
+	mode = 1'b1;
+end 
+
+// r
+initial
+begin
+	r = 1'b1;
 end 
 endmodule
 

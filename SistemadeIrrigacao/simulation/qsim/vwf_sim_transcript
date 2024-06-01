@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon May 27 00:56:22 2024
+    Info: Processing started: Sat Jun 01 16:21:17 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source=D:/Dev/Verilog/SistemadeIrrigacao/Waveform.vwf --testbench_file=D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -34,9 +34,9 @@ Completed successfully.
 
 Completed successfully. 
 
-**** Generating the timing simulation netlist ****
+**** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -55,14 +55,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon May 27 00:56:24 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/ SistemaDeIrrigacao -c SistemaDeIrrigacao
+    Info: Processing started: Sat Jun 01 16:21:18 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/ SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204018): Generated files "SistemaDeIrrigacao.vo" and "SistemaDeIrrigacao_v.sdo" in directory "D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file SistemaDeIrrigacao.vo in folder "D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4614 megabytes
-    Info: Processing ended: Mon May 27 00:56:24 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4621 megabytes
+    Info: Processing ended: Sat Jun 01 16:21:19 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -79,45 +79,46 @@ C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem//vsim -c -do SistemaDeIrrigacao.d
 
 Reading pref.tcl
 
+
 # 2020.1
 
-
 # do SistemaDeIrrigacao.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:56:26 on May 27,2024
+# Start time: 16:21:20 on Jun 01,2024
 # vlog -work work SistemaDeIrrigacao.vo 
-# -- Compiling module shif
+
+# -- Compiling module main
 # 
 # Top level modules:
-# 	shif
-# End time: 00:56:26 on May 27,2024, Elapsed time: 0:00:00
+# 	main
+# End time: 16:21:20 on Jun 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:56:26 on May 27,2024
+# Start time: 16:21:20 on Jun 01,2024
 # vlog -work work Waveform.vwf.vt 
 
-# -- Compiling module shif_vlg_vec_tst
+# -- Compiling module main_vlg_vec_tst
 # 
 # Top level modules:
-# 	shif_vlg_vec_tst
-# End time: 00:56:26 on May 27,2024, Elapsed time: 0:00:00
+# 	main_vlg_vec_tst
+# End time: 16:21:20 on Jun 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.decod7seg_vlg_vec_tst 
-# Start time: 00:56:26 on May 27,2024
-# Loading work.decod7seg_vlg_vec_tst
-# Loading work.decod7seg
+# vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.main_vlg_vec_tst 
+# Start time: 16:21:20 on Jun 01,2024
+# Loading work.main_vlg_vec_tst
+# Loading work.main
 # Loading maxii_ver.maxii_io
 # Loading maxii_ver.maxii_lcell
 # Loading maxii_ver.maxii_asynch_lcell
 # Loading maxii_ver.maxii_lcell_register
 # after#25
-# ** Note: $finish    : Waveform.vwf.vt(63)
-#    Time: 100 ns  Iteration: 0  Instance: /decod7seg_vlg_vec_tst
-# End time: 00:56:27 on May 27,2024, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform.vwf.vt(107)
+#    Time: 100 ns  Iteration: 0  Instance: /main_vlg_vec_tst
+# End time: 16:21:21 on Jun 01,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -130,19 +131,7 @@ Reading D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao.msi
 
 Processing channel transitions... 
 
-Warning: clk - signal not found in VCD.
-
-Warning: d - signal not found in VCD.
-
-Warning: s0 - signal not found in VCD.
-
-Warning: s1 - signal not found in VCD.
-
-Warning: s2 - signal not found in VCD.
-
-Warning: s3 - signal not found in VCD.
-
-Writing the resulting VWF to D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao_20240527005627.sim.vwf
+Writing the resulting VWF to D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao_20240601162121.sim.vwf
 
 Finished VCD to VWF conversion.
 

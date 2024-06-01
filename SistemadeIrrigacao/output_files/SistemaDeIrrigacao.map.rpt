@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SistemaDeIrrigacao
-Mon May 27 00:53:32 2024
+Sat Jun 01 16:41:36 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,14 +13,23 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Port Connectivity Checks: "dff_sync:ff3"
- 11. Port Connectivity Checks: "dff_sync:ff2"
- 12. Port Connectivity Checks: "dff_sync:ff1"
- 13. Port Connectivity Checks: "dff_sync:ff0"
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "contador:contador_minutos_decenas"
+ 10. Port Connectivity Checks: "contador_bcd:contador_minutos_unidades"
+ 11. Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff3"
+ 12. Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff2"
+ 13. Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff1"
+ 14. Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff0"
+ 15. Port Connectivity Checks: "contador:contador_segundos_decenas"
+ 16. Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff3"
+ 17. Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff2"
+ 18. Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff1"
+ 19. Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff0"
+ 20. Port Connectivity Checks: "contador_bcd:contador_segundos_unidades"
+ 21. Port Connectivity Checks: "sistemaNivel:nivel_inst"
+ 22. Port Connectivity Checks: "sistemaIrrigacao:irrigacao_inst"
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,13 +56,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon May 27 00:53:32 2024       ;
+; Analysis & Synthesis Status ; Successful - Sat Jun 01 16:41:36 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; SistemaDeIrrigacao                          ;
-; Top-level Entity Name       ; shif                                        ;
+; Top-level Entity Name       ; main                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 0                                           ;
-; Total pins                  ; 6                                           ;
+; Total logic elements        ; 3                                           ;
+; Total pins                  ; 35                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -65,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EPM240T100C5       ;                    ;
-; Top-level entity name                                            ; shif               ; SistemaDeIrrigacao ;
+; Top-level entity name                                            ; main               ; SistemaDeIrrigacao ;
 ; Family name                                                      ; MAX II             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -146,14 +155,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                               ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; dff_sync.v                       ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/dff_sync.v ;         ;
-; shif.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/shif.v     ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; sistemaNivel.v                   ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/sistemaNivel.v     ;         ;
+; sistemaIrrigacao.v               ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/sistemaIrrigacao.v ;         ;
+; main.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/main.v             ;         ;
+; divisor_clk.v                    ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/divisor_clk.v      ;         ;
+; d_ff.v                           ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v             ;         ;
+; contador.v                       ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/contador.v         ;         ;
+; contador_bcd.v                   ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/contador_bcd.v     ;         ;
+; jk_flipflop.v                    ; yes             ; User Verilog HDL File  ; D:/Dev/Verilog/SistemadeIrrigacao/jk_flipflop.v      ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -161,20 +176,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 0     ;
-;     -- Combinational with no register       ; 0     ;
+; Total logic elements                        ; 3     ;
+;     -- Combinational with no register       ; 3     ;
 ;     -- Register only                        ; 0     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 3     ;
 ;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 3     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -182,31 +197,23 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
-; I/O pins                                    ; 6     ;
+; I/O pins                                    ; 35    ;
+; Maximum fan-out node                        ; H     ;
+; Maximum fan-out                             ; 3     ;
+; Total fan-out                               ; 12    ;
+; Average fan-out                             ; 0.32  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |shif                      ; 0 (0)       ; 0            ; 0          ; 6    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |shif               ; shif        ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+--------------+
+; Compilation Hierarchy Node   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Entity Name  ; Library Name ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+--------------+
+; |main                        ; 3 (0)       ; 0            ; 0          ; 35   ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main                         ; main         ; work         ;
+;    |sistemaNivel:nivel_inst| ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|sistemaNivel:nivel_inst ; sistemaNivel ; work         ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; dff_sync:ff3|q                        ; Stuck at GND due to stuck port data_in ;
-; dff_sync:ff2|q                        ; Stuck at GND due to stuck port data_in ;
-; dff_sync:ff1|q                        ; Stuck at GND due to stuck port data_in ;
-; dff_sync:ff0|q                        ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 4 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -224,44 +231,142 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dff_sync:ff3"                                                                                                                                                                          ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_minutos_decenas"                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dff_sync:ff2"                                                                                                                                                                          ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_minutos_unidades"                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dff_sync:ff1"                                                                                                                                                                          ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff3"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dff_sync:ff0"                                                                                                                                                                          ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff2"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff1"                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_segundos_decenas|jk_flipflop:ff0"                                                                                                                                 ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; j     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; j[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; k     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; k[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; qn    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:contador_segundos_decenas"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff3"                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff2"                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff1"                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_segundos_unidades|jk_flipflop:ff0"                                                                                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; j     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; j[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; k     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; k[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; qn    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_bcd:contador_segundos_unidades"                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bcd  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sistemaNivel:nivel_inst"                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Cheio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Medio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Baixo ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Vazio ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sistemaIrrigacao:irrigacao_inst"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Vs   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Bs   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -270,10 +375,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon May 27 00:53:22 2024
+    Info: Processing started: Sat Jun 01 16:41:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file jk_ff.v
+    Info (12023): Found entity 1: jk_ff File: D:/Dev/Verilog/SistemadeIrrigacao/jk_ff.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sistemanivel.v
     Info (12023): Found entity 1: sistemaNivel File: D:/Dev/Verilog/SistemadeIrrigacao/sistemaNivel.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sistemairrigacao.v
@@ -288,26 +395,97 @@ Info (12021): Found 1 design units, including 1 entities, in source file dff_syn
     Info (12023): Found entity 1: dff_sync File: D:/Dev/Verilog/SistemadeIrrigacao/dff_sync.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shif.v
     Info (12023): Found entity 1: shif File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 1
-Info (12127): Elaborating entity "shif" for the top level hierarchy
-Info (12128): Elaborating entity "dff_sync" for hierarchy "dff_sync:ff0" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 7
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.v
+    Info (12023): Found entity 1: mux2_1 File: D:/Dev/Verilog/SistemadeIrrigacao/mux2_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_clk.v
+    Info (12023): Found entity 1: divisor_clk File: D:/Dev/Verilog/SistemadeIrrigacao/divisor_clk.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff.v
+    Info (12023): Found entity 1: d_ff File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_clk390.v
+    Info (12023): Found entity 1: divisor_clk390 File: D:/Dev/Verilog/SistemadeIrrigacao/divisor_clk390.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador.v
+    Info (12023): Found entity 1: contador File: D:/Dev/Verilog/SistemadeIrrigacao/contador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_bcd.v
+    Info (12023): Found entity 1: contador_bcd File: D:/Dev/Verilog/SistemadeIrrigacao/contador_bcd.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file jk_flipflop.v
+    Info (12023): Found entity 1: jk_flipflop File: D:/Dev/Verilog/SistemadeIrrigacao/jk_flipflop.v Line: 1
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10034): Output port "a" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "b" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "c" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "d" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "e" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "f" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "g" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "d1" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "d2" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "d3" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "d4" at main.v(5) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+Warning (10034): Output port "cl0" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "cl1" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "cl2" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "cl3" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "cl4" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln0" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln1" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln2" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln3" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln4" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln5" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (10034): Output port "ln6" at main.v(6) has no driver File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Info (12128): Elaborating entity "sistemaIrrigacao" for hierarchy "sistemaIrrigacao:irrigacao_inst" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 19
+Info (12128): Elaborating entity "sistemaNivel" for hierarchy "sistemaNivel:nivel_inst" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 24
+Info (12128): Elaborating entity "divisor_clk" for hierarchy "divisor_clk:divisor" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 32
+Info (12128): Elaborating entity "d_ff" for hierarchy "divisor_clk:divisor|d_ff:d0" File: D:/Dev/Verilog/SistemadeIrrigacao/divisor_clk.v Line: 13
+Info (12128): Elaborating entity "contador_bcd" for hierarchy "contador_bcd:contador_segundos_unidades" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 40
+Info (12128): Elaborating entity "jk_flipflop" for hierarchy "contador_bcd:contador_segundos_unidades|jk_flipflop:ff0" File: D:/Dev/Verilog/SistemadeIrrigacao/contador_bcd.v Line: 16
+Info (12128): Elaborating entity "contador" for hierarchy "contador:contador_segundos_decenas" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 48
+Warning (12020): Port "ordered port 0" on the entity instantiation of "ff0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Dev/Verilog/SistemadeIrrigacao/contador.v Line: 16
+Warning (12020): Port "ordered port 1" on the entity instantiation of "ff0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Dev/Verilog/SistemadeIrrigacao/contador.v Line: 16
+Warning (12020): Port "ordered port 0" on the entity instantiation of "ff0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Dev/Verilog/SistemadeIrrigacao/contador_bcd.v Line: 16
+Warning (12020): Port "ordered port 1" on the entity instantiation of "ff0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Dev/Verilog/SistemadeIrrigacao/contador_bcd.v Line: 16
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "s0" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
-    Warning (13410): Pin "s1" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
-    Warning (13410): Pin "s2" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
-    Warning (13410): Pin "s3" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 4
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 3
-    Warning (15610): No output dependent on input pin "d" File: D:/Dev/Verilog/SistemadeIrrigacao/shif.v Line: 3
-Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 4 output pins
+    Warning (13410): Pin "a" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "b" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "c" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "d" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "e" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "f" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "g" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "d1" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "d2" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "d3" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "d4" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 5
+    Warning (13410): Pin "cl0" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "cl1" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "cl2" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "cl3" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "cl4" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln0" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln1" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln2" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln3" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln4" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln5" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+    Warning (13410): Pin "ln6" is stuck at GND File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 6
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+    Warning (15610): No output dependent on input pin "Ua" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+    Warning (15610): No output dependent on input pin "Us" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+    Warning (15610): No output dependent on input pin "T" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+    Warning (15610): No output dependent on input pin "switch" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+    Warning (15610): No output dependent on input pin "reiniciar" File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 4
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 3 logic cells
 Info (144001): Generated suppressed messages file D:/Dev/Verilog/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
     Info: Peak virtual memory: 4701 megabytes
-    Info: Processing ended: Mon May 27 00:53:32 2024
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Processing ended: Sat Jun 01 16:41:36 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
