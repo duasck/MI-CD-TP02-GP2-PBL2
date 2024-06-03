@@ -1,0 +1,8 @@
+module decrescente (clk, mode, q0, q1, q2, q3);
+
+	input clk, mode;
+	output q0, q1, q2, q3;
+	
+	wire q0-, q1-, q2-, q3-;
+	
+	jk_flipflop (.j(1), .k(1), .clk(clk), .reset(0), .q(q0), .qn(q0-));

@@ -19,88 +19,36 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/01/2024 16:21:17"
+// Generated on "06/03/2024 01:04:11"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          main
+// Verilog Test Bench (with test vectors) for design :                          us
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module main_vlg_vec_tst();
+module us_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg H;
-reg L;
-reg M;
-reg T;
-reg Ua;
-reg Us;
 reg clk;
-reg reiniciar;
-reg switch;
+reg rst;
 // wires                                               
-wire Alarme;
-wire Baixo;
-wire Bs;
-wire Cheio;
-wire Erro;
-wire Medio;
-wire Vazio;
-wire Ve;
-wire Vs;
-wire a;
-wire b;
-wire c;
-wire d;
-wire d1;
-wire d2;
-wire d3;
-wire d4;
-wire e;
-wire f;
-wire g;
-wire [3:0] minutos_decenas;
-wire [3:0] minutos_unidades;
-wire [3:0] segundos_decenas;
-wire [3:0] segundos_unidades;
+wire carry;
+wire q0;
+wire q1;
+wire q2;
+wire q3;
 
 // assign statements (if any)                          
-main i1 (
+us i1 (
 // port map - connection between master ports and signals/registers   
-	.Alarme(Alarme),
-	.Baixo(Baixo),
-	.Bs(Bs),
-	.Cheio(Cheio),
-	.Erro(Erro),
-	.H(H),
-	.L(L),
-	.M(M),
-	.Medio(Medio),
-	.T(T),
-	.Ua(Ua),
-	.Us(Us),
-	.Vazio(Vazio),
-	.Ve(Ve),
-	.Vs(Vs),
-	.a(a),
-	.b(b),
-	.c(c),
+	.carry(carry),
 	.clk(clk),
-	.d(d),
-	.d1(d1),
-	.d2(d2),
-	.d3(d3),
-	.d4(d4),
-	.e(e),
-	.f(f),
-	.g(g),
-	.minutos_decenas(minutos_decenas),
-	.minutos_unidades(minutos_unidades),
-	.reiniciar(reiniciar),
-	.segundos_decenas(segundos_decenas),
-	.segundos_unidades(segundos_unidades),
-	.switch(switch)
+	.q0(q0),
+	.q1(q1),
+	.q2(q2),
+	.q3(q3),
+	.rst(rst)
 );
 initial 
 begin 
@@ -111,8 +59,14 @@ end
 always
 begin
 	clk = 1'b0;
-	clk = #2500 1'b1;
-	#2500;
+	clk = #5000 1'b1;
+	#5000;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
 end 
 endmodule
 

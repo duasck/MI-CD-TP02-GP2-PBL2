@@ -3,7 +3,7 @@ $comment
 		vcd file SistemaDeIrrigacao.msim.vcd -direction
 $end
 $date
-	Sat Jun 01 16:21:21 2024
+	Mon Jun 03 01:04:15 2024
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,362 +12,77 @@ $timescale
 	1ps
 $end
 
-$scope module main_vlg_vec_tst $end
-$var reg 1 ! H $end
-$var reg 1 " L $end
-$var reg 1 # M $end
-$var reg 1 $ T $end
-$var reg 1 % Ua $end
-$var reg 1 & Us $end
-$var reg 1 ' clk $end
-$var reg 1 ( reiniciar $end
-$var reg 1 ) switch $end
-$var wire 1 * Alarme $end
-$var wire 1 + Baixo $end
-$var wire 1 , Bs $end
-$var wire 1 - Cheio $end
-$var wire 1 . Erro $end
-$var wire 1 / Medio $end
-$var wire 1 0 Vazio $end
-$var wire 1 1 Ve $end
-$var wire 1 2 Vs $end
-$var wire 1 3 a $end
-$var wire 1 4 b $end
-$var wire 1 5 c $end
-$var wire 1 6 d $end
-$var wire 1 7 d1 $end
-$var wire 1 8 d2 $end
-$var wire 1 9 d3 $end
-$var wire 1 : d4 $end
-$var wire 1 ; e $end
-$var wire 1 < f $end
-$var wire 1 = g $end
-$var wire 1 > minutos_decenas [3] $end
-$var wire 1 ? minutos_decenas [2] $end
-$var wire 1 @ minutos_decenas [1] $end
-$var wire 1 A minutos_decenas [0] $end
-$var wire 1 B minutos_unidades [3] $end
-$var wire 1 C minutos_unidades [2] $end
-$var wire 1 D minutos_unidades [1] $end
-$var wire 1 E minutos_unidades [0] $end
-$var wire 1 F segundos_decenas [3] $end
-$var wire 1 G segundos_decenas [2] $end
-$var wire 1 H segundos_decenas [1] $end
-$var wire 1 I segundos_decenas [0] $end
-$var wire 1 J segundos_unidades [3] $end
-$var wire 1 K segundos_unidades [2] $end
-$var wire 1 L segundos_unidades [1] $end
-$var wire 1 M segundos_unidades [0] $end
+$scope module us_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var wire 1 # carry $end
+$var wire 1 $ q0 $end
+$var wire 1 % q1 $end
+$var wire 1 & q2 $end
+$var wire 1 ' q3 $end
 
 $scope module i1 $end
-$var wire 1 N gnd $end
-$var wire 1 O vcc $end
-$var wire 1 P unknown $end
-$var tri1 1 Q devclrn $end
-$var tri1 1 R devpor $end
-$var tri1 1 S devoe $end
-$var wire 1 T Us~combout $end
-$var wire 1 U L~combout $end
-$var wire 1 V Ua~combout $end
-$var wire 1 W M~combout $end
-$var wire 1 X T~combout $end
-$var wire 1 Y H~combout $end
-$var wire 1 Z irrigacao_inst|A3~0_combout $end
-$var wire 1 [ irrigacao_inst|A3~1_combout $end
-$var wire 1 \ irrigacao_inst|B3~0_combout $end
-$var wire 1 ] irrigacao_inst|B3~1_combout $end
-$var wire 1 ^ nivel_inst|C1~combout $end
-$var wire 1 _ nivel_inst|M1~combout $end
-$var wire 1 ` nivel_inst|B1~combout $end
-$var wire 1 a nivel_inst|V1~combout $end
-$var wire 1 b nivel_inst|E4~0_combout $end
-$var wire 1 c nivel_inst|A2~combout $end
-$var wire 1 d nivel_inst|Ve3~0_combout $end
-$var wire 1 e clk~combout $end
-$var wire 1 f contador_minutos_decenas|reset_count~0_combout $end
-$var wire 1 g contador_minutos_decenas|ff1|q~regout $end
-$var wire 1 h contador_minutos_decenas|ff2|q~regout $end
-$var wire 1 i contador_segundos_unidades|reset_count~combout $end
-$var wire 1 j contador_segundos_unidades|ff1|q~regout $end
-$var wire 1 k contador_segundos_unidades|ff2|q~regout $end
-$var wire 1 l contador_segundos_unidades|ff3|q~regout $end
-$var wire 1 m contador_segundos_unidades|carry~combout $end
-$var wire 1 n contador_segundos_decenas|ff1|q~regout $end
-$var wire 1 o contador_segundos_decenas|ff2|q~regout $end
-$var wire 1 p contador_segundos_decenas|reset_count~combout $end
-$var wire 1 q contador_segundos_decenas|ff0|q~regout $end
-$var wire 1 r contador_segundos_decenas|carry~combout $end
-$var wire 1 s contador_minutos_unidades|ff1|q~regout $end
-$var wire 1 t contador_minutos_unidades|reset_count~combout $end
-$var wire 1 u contador_minutos_unidades|ff0|q~regout $end
-$var wire 1 v contador_minutos_unidades|ff2|q~regout $end
-$var wire 1 w contador_minutos_unidades|ff3|q~regout $end
-$var wire 1 x contador_minutos_unidades|carry~combout $end
-$var wire 1 y contador_minutos_decenas|ff0|q~regout $end
-$var wire 1 z contador_minutos_decenas|carry~combout $end
-$var wire 1 { divisor|d0|q~regout $end
-$var wire 1 | divisor|d1|q~regout $end
-$var wire 1 } divisor|d2|q~regout $end
-$var wire 1 ~ divisor|d3|q~regout $end
-$var wire 1 !! divisor|d4|q~regout $end
-$var wire 1 "! divisor|d5|q~regout $end
-$var wire 1 #! divisor|d6|q~regout $end
-$var wire 1 $! divisor|d7|q~regout $end
-$var wire 1 %! divisor|d8|q~regout $end
-$var wire 1 &! divisor|d9|q~regout $end
-$var wire 1 '! divisor|d10|q~regout $end
-$var wire 1 (! divisor|d11|q~regout $end
-$var wire 1 )! divisor|d12|q~regout $end
-$var wire 1 *! divisor|d13|q~regout $end
-$var wire 1 +! divisor|d14|q~regout $end
-$var wire 1 ,! divisor|d15|q~regout $end
-$var wire 1 -! divisor|d16|q~regout $end
-$var wire 1 .! divisor|d17|q~regout $end
-$var wire 1 /! divisor|d18|q~regout $end
-$var wire 1 0! divisor|d19|q~regout $end
-$var wire 1 1! divisor|d20|q~regout $end
-$var wire 1 2! divisor|d21|q~regout $end
-$var wire 1 3! divisor|d22|q~regout $end
-$var wire 1 4! divisor|d23|q~regout $end
-$var wire 1 5! divisor|d24|q~regout $end
-$var wire 1 6! contador_segundos_unidades|ff0|q~regout $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x!
-x"
-x#
-x$
-x%
-x&
+0!
+0"
+1#
+0$
+0%
+0&
 0'
-x(
-x)
+0(
+1)
 x*
-x+
-x,
-x-
-x.
-x/
-x0
-x1
-x2
-03
-04
-05
-06
-07
-08
-09
-0:
-0;
-0<
-0=
-0A
-0@
-0?
-0>
-0E
-0D
-0C
-0B
-0I
-0H
-0G
-0F
-0M
-0L
-0K
-0J
-0N
-1O
-xP
-1Q
-1R
-1S
-xT
-xU
-xV
-xW
-xX
-xY
-xZ
-x[
-x\
-x]
-x^
-x_
-x`
-xa
-xb
-xc
-xd
-0e
-0f
-0g
-0h
-0i
-0j
-0k
-0l
-0m
-0n
-0o
-0p
-0q
-0r
-0s
-0t
-0u
-0v
-0w
-0x
-0y
-1z
-0{
-0|
-0}
-0~
-0!!
-0"!
-0#!
-0$!
-0%!
-0&!
-0'!
-0(!
-0)!
-0*!
-0+!
-0,!
-0-!
-0.!
-0/!
-00!
-01!
-02!
-03!
-04!
-05!
-06!
+1+
+1,
+1-
 $end
-#2500
-1'
-1e
 #5000
-0'
-0e
-#7500
-1'
-1e
+1!
 #10000
-0'
-0e
-#12500
-1'
-1e
+0!
 #15000
-0'
-0e
-#17500
-1'
-1e
+1!
 #20000
-0'
-0e
-#22500
-1'
-1e
+0!
 #25000
-0'
-0e
-#27500
-1'
-1e
+1!
 #30000
-0'
-0e
-#32500
-1'
-1e
+0!
 #35000
-0'
-0e
-#37500
-1'
-1e
+1!
 #40000
-0'
-0e
-#42500
-1'
-1e
+0!
 #45000
-0'
-0e
-#47500
-1'
-1e
+1!
 #50000
-0'
-0e
-#52500
-1'
-1e
+0!
 #55000
-0'
-0e
-#57500
-1'
-1e
+1!
 #60000
-0'
-0e
-#62500
-1'
-1e
+0!
 #65000
-0'
-0e
-#67500
-1'
-1e
+1!
 #70000
-0'
-0e
-#72500
-1'
-1e
+0!
 #75000
-0'
-0e
-#77500
-1'
-1e
+1!
 #80000
-0'
-0e
-#82500
-1'
-1e
+0!
 #85000
-0'
-0e
-#87500
-1'
-1e
+1!
 #90000
-0'
-0e
-#92500
-1'
-1e
+0!
 #95000
-0'
-0e
-#97500
-1'
-1e
+1!
 #100000

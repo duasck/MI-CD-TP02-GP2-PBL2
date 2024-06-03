@@ -1,4 +1,4 @@
-module main(clk, H, M, L, Ua, Us, T, switch, reiniciar, a, b, c, d, e, f, g, d1, d2, d3, d4, Erro, Alarme, Ve, cl0, cl1, cl2, cl3, cl4, ln0, ln1, ln2, ln3, ln4, ln5, ln6);
+module main(clk, H, M, L, Ua, Us, T, switch, reiniciar, Erro, Alarme, Ve, a, b, c, d, e, f, g, d1, d2, d3, d4, cl0, cl1, cl2, cl3, cl4, ln0, ln1, ln2, ln3, ln4, ln5, ln6);
 
 	
 	input H, M, L, Ua, Us, T, switch, reiniciar, clk;
@@ -64,6 +64,7 @@ module main(clk, H, M, L, Ua, Us, T, switch, reiniciar, a, b, c, d, e, f, g, d1,
         .carry(reset)
     );
 
+	 
 endmodule
 
 

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY us
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -77,22 +77,6 @@ set_location_assignment PIN_88 -to d1
 set_location_assignment PIN_66 -to d2
 set_location_assignment PIN_68 -to d3
 set_location_assignment PIN_37 -to d4
-set_global_assignment -name VERILOG_FILE jk_ff.v
-set_global_assignment -name VERILOG_FILE sistemaNivel.v
-set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
-set_global_assignment -name VERILOG_FILE main.v
-set_global_assignment -name VERILOG_FILE decod7seg.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VERILOG_FILE ffd.v
-set_global_assignment -name VERILOG_FILE dff_sync.v
-set_global_assignment -name VERILOG_FILE shif.v
-set_global_assignment -name VERILOG_FILE mux2_1.v
-set_global_assignment -name VERILOG_FILE divisor_clk.v
-set_global_assignment -name VERILOG_FILE d_ff.v
-set_global_assignment -name VERILOG_FILE divisor_clk390.v
-set_global_assignment -name VERILOG_FILE contador.v
-set_global_assignment -name VERILOG_FILE contador_bcd.v
-set_global_assignment -name VERILOG_FILE jk_flipflop.v
 set_location_assignment PIN_52 -to reiniciar
 set_location_assignment PIN_89 -to ln6
 set_location_assignment PIN_91 -to ln5
@@ -107,3 +91,17 @@ set_location_assignment PIN_95 -to cl2
 set_location_assignment PIN_82 -to cl3
 set_location_assignment PIN_78 -to cl4
 set_location_assignment PIN_12 -to clk
+set_global_assignment -name VERILOG_FILE main.v
+set_global_assignment -name VERILOG_FILE sistemaNivel.v
+set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
+set_global_assignment -name VERILOG_FILE decod7seg.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE mux2_1.v
+set_global_assignment -name VERILOG_FILE divisor_clk.v
+set_global_assignment -name VERILOG_FILE d_ff.v
+set_global_assignment -name VERILOG_FILE divisor_clk390.v
+set_global_assignment -name VERILOG_FILE contador.v
+set_global_assignment -name VERILOG_FILE contador_bcd.v
+set_global_assignment -name VERILOG_FILE jk_flipflop.v
+set_global_assignment -name VERILOG_FILE decrescente.v
+set_global_assignment -name VERILOG_FILE us.v

@@ -6,7 +6,7 @@ module jk_flipflop ( //usando esse
     output reg q,
     output qn
 );
-    always @(posedge clk or posedge reset) begin
+    always @(posedge  clk or posedge reset) begin
         if (reset) begin
             q <= 0;
         end else begin
@@ -22,3 +22,4 @@ module jk_flipflop ( //usando esse
     assign qn = ~q;
 
 endmodule
+
