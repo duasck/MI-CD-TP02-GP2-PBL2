@@ -1,89 +1,136 @@
-|top_module
+|freq_1
 clk => clk.IN1
-iUseg[0] => iUseg[0].IN1
-iUseg[1] => iUseg[1].IN1
-iUseg[2] => iUseg[2].IN1
-iUseg[3] => iUseg[3].IN1
-loa => ~NO_FANOUT~
-Useg[0] << down_count:us.q
-Useg[1] << down_count:us.q
-Useg[2] << down_count:us.q
-Useg[3] << down_count:us.q
-carryout0 << down_count:us.rco
-carryout1 << down_count:us.max_min
-pulse1 << <GND>
+clk7seg <= ff_d:dff_25.port1
+clkLeds <= clkLeds.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_module|down_count:us
-clk => clk.IN4
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-load => comb.IN0
-d[0] => comb.IN1
-d[1] => comb.IN1
-d[2] => comb.IN1
-d[3] => comb.IN1
-up_down => a1.IN0
-up_down => WideAnd0.IN4
-up_down => a0.IN0
-up_down => WideAnd1.IN4
-cten => n4.IN2
-cten => a0.IN1
-cten => a1.IN1
-q[0] <= jk_ff:ff0.Q
-q[1] <= jk_ff:ff1.Q
-q[2] <= jk_ff:ff2.Q
-q[3] <= jk_ff:ff3.Q
-rco <= WideNand0.DB_MAX_OUTPUT_PORT_TYPE
-max_min <= comb.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_module|down_count:us|jk_ff:ff0
-J => Mux0.IN2
-K => Mux0.IN3
-CLK => Q~reg0.CLK
-RESET => Q.IN0
-RESET => Q~reg0.ACLR
-PRESET => Q.IN1
+|freq_1|ff_d:dff_0
+clk => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_module|down_count:us|jk_ff:ff1
-J => Mux0.IN2
-K => Mux0.IN3
-CLK => Q~reg0.CLK
-RESET => Q.IN0
-RESET => Q~reg0.ACLR
-PRESET => Q.IN1
+|freq_1|ff_d:dff_1
+clk => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_module|down_count:us|jk_ff:ff2
-J => Mux0.IN2
-K => Mux0.IN3
-CLK => Q~reg0.CLK
-RESET => Q.IN0
-RESET => Q~reg0.ACLR
-PRESET => Q.IN1
+|freq_1|ff_d:dff_2
+clk => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_module|down_count:us|jk_ff:ff3
-J => Mux0.IN2
-K => Mux0.IN3
-CLK => Q~reg0.CLK
-RESET => Q.IN0
-RESET => Q~reg0.ACLR
-PRESET => Q.IN1
+|freq_1|ff_d:dff_3
+clk => Q~reg0.CLK
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_4
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_5
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_6
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_7
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_8
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_9
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_10
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_11
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_12
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_13
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_14
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_15
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_16
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_17
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_18
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_19
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_20
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_21
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_22
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_23
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_24
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|freq_1|ff_d:dff_25
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

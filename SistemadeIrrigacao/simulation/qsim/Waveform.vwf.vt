@@ -1,4 +1,4 @@
-// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
@@ -19,36 +19,28 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/05/2024 17:34:34"
+// Generated on "06/05/2024 20:36:04"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          top_module
+// Verilog Test Bench (with test vectors) for design :                          freq_1
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module top_module_vlg_vec_tst();
+module freq_1_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg [3:0] iUseg;
-reg loa;
 // wires                                               
-wire [3:0] Useg;
-wire carryout0;
-wire carryout1;
-wire pulse1;
+wire clk7seg;
+wire clkLeds;
 
 // assign statements (if any)                          
-top_module i1 (
+freq_1 i1 (
 // port map - connection between master ports and signals/registers   
-	.Useg(Useg),
-	.carryout0(carryout0),
-	.carryout1(carryout1),
 	.clk(clk),
-	.iUseg(iUseg),
-	.loa(loa),
-	.pulse1(pulse1)
+	.clk7seg(clk7seg),
+	.clkLeds(clkLeds)
 );
 initial 
 begin 
@@ -56,35 +48,11 @@ begin
 end 
 
 // clk
-initial
+always
 begin
 	clk = 1'b0;
-end 
-// iUseg[ 3 ]
-initial
-begin
-	iUseg[3] = 1'b1;
-end 
-// iUseg[ 2 ]
-initial
-begin
-	iUseg[2] = 1'b0;
-end 
-// iUseg[ 1 ]
-initial
-begin
-	iUseg[1] = 1'b0;
-end 
-// iUseg[ 0 ]
-initial
-begin
-	iUseg[0] = 1'b1;
-end 
-
-// loa
-initial
-begin
-	loa = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
 end 
 endmodule
 

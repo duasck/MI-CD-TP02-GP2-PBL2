@@ -1,7 +1,7 @@
-module freq_1 (clk, clk_out);
+module freq_1 (clk, clkLeds);
 
 input clk;
-output clk_out;
+output clkLeds;
 
 wire [24:0] d;
 	
@@ -20,16 +20,6 @@ wire [24:0] d;
 	ff_d dff_12(d[11], d[12]);
 	ff_d dff_13(d[12], d[13]);
 	ff_d dff_14(d[13], d[14]);
-	ff_d dff_15(d[14], d[15]);
-	ff_d dff_16(d[15], d[16]);
-	ff_d dff_17(d[16], d[17]);
-	ff_d dff_18(d[17], d[18]);
-	ff_d dff_19(d[18], d[19]);
-	ff_d dff_20(d[19], d[20]);
-	ff_d dff_21(d[20], d[21]);
-	ff_d dff_22(d[21], d[22]);
-	ff_d dff_23(d[22], d[23]);
-	ff_d dff_24(d[23], d[24]);
-	ff_d dff_25(d[24], clk_out);
+	ff_d dff_15(d[14], clkLeds);
 
 endmodule

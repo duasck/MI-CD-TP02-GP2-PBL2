@@ -1,16 +1,16 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source="D:/Dev/Verilog/SistemadeIrrigacao/Waveform.vwf" --testbench_file="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source="D:/Dev/Verilog/SistemadeIrrigacao/Waveform.vwf" --testbench_file="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/Waveform.vwf" --testbench_file="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/Waveform.vwf" --testbench_file="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/simulation/qsim/" SistemaDeIrrigacao -c SistemaDeIrrigacao</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work SistemaDeIrrigacao.vo
 vlog -work work Waveform.vwf.vt
-vsim  -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_module_vlg_vec_tst
+vsim  -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.freq_1_vlg_vec_tst
 vcd file -direction SistemaDeIrrigacao.msim.vcd
-vcd add -internal top_module_vlg_vec_tst/*
-vcd add -internal top_module_vlg_vec_tst/i1/*
+vcd add -internal freq_1_vlg_vec_tst/*
+vcd add -internal freq_1_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -25,10 +25,10 @@ quit -f
 vlib work
 vlog -work work SistemaDeIrrigacao.vo
 vlog -work work Waveform.vwf.vt
-vsim -novopt -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_module_vlg_vec_tst
+vsim -novopt -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.freq_1_vlg_vec_tst
 vcd file -direction SistemaDeIrrigacao.msim.vcd
-vcd add -internal top_module_vlg_vec_tst/*
-vcd add -internal top_module_vlg_vec_tst/i1/*
+vcd add -internal freq_1_vlg_vec_tst/*
+vcd add -internal freq_1_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -48,7 +48,7 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -76,76 +76,6 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("Useg")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("Useg[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Useg";
-}
-
-SIGNAL("Useg[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Useg";
-}
-
-SIGNAL("Useg[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Useg";
-}
-
-SIGNAL("Useg[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "Useg";
-}
-
-SIGNAL("carryout0")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("carryout1")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 SIGNAL("clk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -156,77 +86,7 @@ SIGNAL("clk")
 	PARENT = "";
 }
 
-SIGNAL("ct")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("iUseg")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 4;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("iUseg[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "iUseg";
-}
-
-SIGNAL("iUseg[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "iUseg";
-}
-
-SIGNAL("iUseg[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "iUseg";
-}
-
-SIGNAL("iUseg[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "iUseg";
-}
-
-SIGNAL("loa")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("pulse1")
+SIGNAL("clk7seg")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -236,68 +96,14 @@ SIGNAL("pulse1")
 	PARENT = "";
 }
 
-SIGNAL("up")
+SIGNAL("clkLeds")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
+	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-TRANSITION_LIST("Useg[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("Useg[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("Useg[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("Useg[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("carryout0")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("carryout1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 100.0;
-	}
 }
 
 TRANSITION_LIST("clk")
@@ -305,65 +111,16 @@ TRANSITION_LIST("clk")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
 	}
 }
 
-TRANSITION_LIST("ct")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("iUseg[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("iUseg[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("iUseg[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("iUseg[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("loa")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("pulse1")
+TRANSITION_LIST("clk7seg")
 {
 	NODE
 	{
@@ -372,81 +129,13 @@ TRANSITION_LIST("pulse1")
 	}
 }
 
-TRANSITION_LIST("up")
+TRANSITION_LIST("clkLeds")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
+		LEVEL X FOR 100.0;
 	}
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Useg";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 0;
-	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3, 4;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Useg[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 1;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Useg[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Useg[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Useg[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "carryout0";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 5;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "carryout1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
@@ -454,93 +143,25 @@ DISPLAY_LINE
 	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 7;
+	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ct";
+	CHANNEL = "clk7seg";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 8;
+	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "iUseg";
-	EXPAND_STATUS = EXPANDED;
-	RADIX = Binary;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 0;
-	CHILDREN = 10, 11, 12, 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "iUseg[3]";
+	CHANNEL = "clkLeds";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 9;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "iUseg[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 9;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "iUseg[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 9;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "iUseg[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 1;
-	PARENT = 9;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "loa";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 14;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "pulse1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "up";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 16;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
 }
 
