@@ -1,4 +1,4 @@
-module jk_ff (
+module jk_ff ( //usando no down_count
     input wire J,
     input wire K,
     input wire CLK,

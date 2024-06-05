@@ -1,4 +1,4 @@
-module d_ff (d, rstn, clk, q);  // usou no divisor
+module d_ff (d, rstn, clk, q);  // usando no gatilho
 	input d, rstn, clk;
 	output reg q;
   

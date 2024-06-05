@@ -1,0 +1,9 @@
+module gatilho (d, clk, q);
+	input d, clk;
+	output q;
+	
+	
+	//         Active low
+	//D, CLK, RESET, PRESET,  Q, Qn
+	
+	d_flip_flop d0 (.D(d), .CLK(clk), .RESET(), .PRESET(), .Q(), .Qn(q));

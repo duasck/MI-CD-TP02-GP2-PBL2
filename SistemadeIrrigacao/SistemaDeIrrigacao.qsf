@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY down_count
+set_global_assignment -name TOP_LEVEL_ENTITY top_module
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -96,17 +96,12 @@ set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
 set_global_assignment -name VERILOG_FILE decod7seg.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE mux2_1.v
-set_global_assignment -name VERILOG_FILE divisor_clk.v
 set_global_assignment -name VERILOG_FILE d_ff.v
-set_global_assignment -name VERILOG_FILE divisor_clk390.v
-set_global_assignment -name VERILOG_FILE contador.v
-set_global_assignment -name VERILOG_FILE contador_bcd.v
-set_global_assignment -name VERILOG_FILE jk_flipflop.v
-set_global_assignment -name VERILOG_FILE decrescente.v
-set_global_assignment -name VERILOG_FILE us.v
-set_global_assignment -name VERILOG_FILE jk_flip_flop.v
-set_global_assignment -name VERILOG_FILE d_flip_flop.v
-set_global_assignment -name VERILOG_FILE reversible_master_slave_d_flip_flop.v
 set_global_assignment -name VERILOG_FILE down_count.v
 set_global_assignment -name VERILOG_FILE jk_ff.v
 set_global_assignment -name VERILOG_FILE top_module.v
+set_global_assignment -name VERILOG_FILE gatilho.v
+set_global_assignment -name VERILOG_FILE ff_d.v
+set_global_assignment -name VERILOG_FILE freq_1.v
+set_global_assignment -name VERILOG_FILE initialize_to_1_then_0.v
+set_global_assignment -name VERILOG_FILE d_flip_flop.v

@@ -1,45 +1,56 @@
+
 module top_module (
     input wire clk,
-    input wire reset,
-    input wire load,
-    input wire [7:0] load_minutes,
-    input wire [7:0] load_seconds,
-    output wire [6:0] seg,
-    output wire [3:0] an
+    input [3:0] iUseg,
+	// input [3:0] iDseg,
+	 input loa,
+    output wire [3:0] Useg,
+    //output wire [3:0] Dseg,
+	 output carryout0,
+	output carryout1,
+	 output pulse1
 );
     wire clk_1hz;
-    wire uso, umo, dso, dmo;
+    wire [3:0] uso, umo, dso, dmo;
 	 wire carry0, carry1, carry2, carry3;
+	 
     // Instanciação dos módulos
 // clk,load, d, up_down, cten, q, rco, max_min
 
-    divisor_clk divisor (
+    /*	freq_1 divisor (
         .clk(clk),
-        .rstn(reset),
-        .out(clk_1hz)
+        .clk_out(clk_1hz)
     );
+	 
 	//load 1, cten 0, up_down 1
-	/*wire [3:0] f1 ;
-	assign f0 = 1001;
-	assign l0 = */
-	wire l0;
-	initial l0 = 1
+	// gatilho (.clk, .shift_in, .reset, .q, .stop)*/
+
+//gatilho g (.clk(clk), .reset(1), .stop(pulse1));
+	//not (n0, pulse1);
+
+	
     down_count us (
-        .clk(clk_1hz),
-        .load(l0),
-        .d(f0),
+        .clk(clk),
+        .load(1),
+        .d(iUseg),
         .up_down(1),
         .cten(0),
         .q(uso),
-		  .rco(),
+		  .rco(temp),
 		  .max_min(carry0)
     );
-
-	 /*assign l0 = 
+	 
+	 assign Useg = uso;
+	 wire temp;
+	 assign carryout0 = temp;
+	 assign carryout1 = carry0;
+	 
+	/*  assign Useg = uso;
+	
     down_count ds (
         .clk(carry0),
-        .load(1),
-        .d(0101),
+        .load(pulse1),
+        .d(iDseg),
         .up_down(1),
         .cten(0),
         .q(dso),
@@ -47,6 +58,8 @@ module top_module (
 		  .max_min(carry1)
     );
 	 
+	 assign Dseg = dso;
+	
    down_count um (
         .clk(clk_1hz),
         .load(1),
@@ -67,6 +80,6 @@ module top_module (
         .q(dmo),
 		  .rco(),
 		  .max_min(carry3)
-    );*/
-	 
+    ); 
+	 */
 endmodule

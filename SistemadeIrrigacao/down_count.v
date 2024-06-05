@@ -53,5 +53,6 @@ module down_count ( // FUNCIONA!!!!!!!!!!!!!!!!!!!!!
 	assign q = {q3, q2, q1, q0};
 	assign max_min = o0;
 	assign rco = na8;
+	//load 1, cten 0, up_down 1
 
 endmodule

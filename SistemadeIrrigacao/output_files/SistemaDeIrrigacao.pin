@@ -67,60 +67,60 @@ GND*                         : 1         :        :                   :         
 GND*                         : 2         :        :                   :         : 1         :                
 GND*                         : 3         :        :                   :         : 1         :                
 GND*                         : 4         :        :                   :         : 1         :                
-reset                        : 5         : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 5         :        :                   :         : 1         :                
 GND*                         : 6         :        :                   :         : 1         :                
 GND*                         : 7         :        :                   :         : 1         :                
-segundos_unidades[2]         : 8         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 8         :        :                   :         : 1         :                
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 10        : gnd    :                   :         :           :                
 GNDINT                       : 11        : gnd    :                   :         :           :                
 clk                          : 12        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 13        : power  :                   : 2.5V/3.3V :           :                
-segundos_decenas[3]          : 14        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 14        :        :                   :         : 1         :                
 GND*                         : 15        :        :                   :         : 1         :                
 GND*                         : 16        :        :                   :         : 1         :                
 GND*                         : 17        :        :                   :         : 1         :                
 GND*                         : 18        :        :                   :         : 1         :                
 GND*                         : 19        :        :                   :         : 1         :                
-segundos_unidades[1]         : 20        : output : 3.3-V LVTTL       :         : 1         : N              
-minutos_decenas[2]           : 21        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 20        :        :                   :         : 1         :                
+GND*                         : 21        :        :                   :         : 1         :                
 TMS                          : 22        : input  :                   :         : 1         :                
 TDI                          : 23        : input  :                   :         : 1         :                
 TCK                          : 24        : input  :                   :         : 1         :                
 TDO                          : 25        : output :                   :         : 1         :                
-minutos_decenas[3]           : 26        : output : 3.3-V LVTTL       :         : 1         : N              
-segundos_decenas[2]          : 27        : output : 3.3-V LVTTL       :         : 1         : N              
-D[0]                         : 28        : input  : 3.3-V LVTTL       :         : 1         : N              
-segundos_decenas[1]          : 29        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 26        :        :                   :         : 1         :                
+GND*                         : 27        :        :                   :         : 1         :                
+GND*                         : 28        :        :                   :         : 1         :                
+GND*                         : 29        :        :                   :         : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
 VCCIO1                       : 31        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 32        : gnd    :                   :         :           :                
-D[3]                         : 33        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 34        :        :                   :         : 1         :                
-GND*                         : 35        :        :                   :         : 1         :                
-GND*                         : 36        :        :                   :         : 1         :                
-GND*                         : 37        :        :                   :         : 1         :                
-GND*                         : 38        :        :                   :         : 1         :                
-GND*                         : 39        :        :                   :         : 1         :                
+carryout0                    : 33        : output : 3.3-V LVTTL       :         : 1         : N              
+carryout1                    : 34        : output : 3.3-V LVTTL       :         : 1         : N              
+loa                          : 35        : input  : 3.3-V LVTTL       :         : 1         : N              
+Useg[2]                      : 36        : output : 3.3-V LVTTL       :         : 1         : N              
+Useg[3]                      : 37        : output : 3.3-V LVTTL       :         : 1         : N              
+Useg[0]                      : 38        : output : 3.3-V LVTTL       :         : 1         : N              
+Useg[1]                      : 39        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 40        :        :                   :         : 1         :                
-GND*                         : 41        :        :                   :         : 1         :                
+pulse1                       : 41        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 42        :        :                   :         : 1         :                
 GND*                         : 43        :        :                   :         : 1         :                
 GND*                         : 44        :        :                   :         : 1         :                
 VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
 GNDIO                        : 46        : gnd    :                   :         :           :                
 GND*                         : 47        :        :                   :         : 1         :                
-minutos_unidades[2]          : 48        : output : 3.3-V LVTTL       :         : 1         : N              
-D[2]                         : 49        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 48        :        :                   :         : 1         :                
+GND*                         : 49        :        :                   :         : 1         :                
 GND*                         : 50        :        :                   :         : 1         :                
 GND*                         : 51        :        :                   :         : 1         :                
-minutos_unidades[1]          : 52        : output : 3.3-V LVTTL       :         : 2         : N              
-minutos_decenas[1]           : 53        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 52        :        :                   :         : 2         :                
+iUseg[1]                     : 53        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 54        :        :                   :         : 2         :                
-minutos_decenas[0]           : 55        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 55        :        :                   :         : 2         :                
 GND*                         : 56        :        :                   :         : 2         :                
 GND*                         : 57        :        :                   :         : 2         :                
-segundos_decenas[0]          : 58        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 58        :        :                   :         : 2         :                
 VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
 GNDIO                        : 60        : gnd    :                   :         :           :                
 GND*                         : 61        :        :                   :         : 2         :                
@@ -137,13 +137,13 @@ GND*                         : 71        :        :                   :         
 GND*                         : 72        :        :                   :         : 2         :                
 GND*                         : 73        :        :                   :         : 2         :                
 GND*                         : 74        :        :                   :         : 2         :                
-D[1]                         : 75        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 75        :        :                   :         : 2         :                
 GND*                         : 76        :        :                   :         : 2         :                
 GND*                         : 77        :        :                   :         : 2         :                
-segundos_unidades[3]         : 78        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 78        :        :                   :         : 2         :                
 GNDIO                        : 79        : gnd    :                   :         :           :                
 VCCIO2                       : 80        : power  :                   : 3.3V    : 2         :                
-GND*                         : 81        :        :                   :         : 2         :                
+iUseg[0]                     : 81        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 82        :        :                   :         : 2         :                
 GND*                         : 83        :        :                   :         : 2         :                
 GND*                         : 84        :        :                   :         : 2         :                
@@ -154,12 +154,12 @@ GND*                         : 88        :        :                   :         
 GND*                         : 89        :        :                   :         : 2         :                
 GND*                         : 90        :        :                   :         : 2         :                
 GND*                         : 91        :        :                   :         : 2         :                
-GND*                         : 92        :        :                   :         : 2         :                
+iUseg[2]                     : 92        : input  : 3.3-V LVTTL       :         : 2         : N              
 GNDIO                        : 93        : gnd    :                   :         :           :                
 VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
-GND*                         : 95        :        :                   :         : 2         :                
-minutos_unidades[3]          : 96        : output : 3.3-V LVTTL       :         : 2         : N              
-minutos_unidades[0]          : 97        : output : 3.3-V LVTTL       :         : 2         : N              
+iUseg[3]                     : 95        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 96        :        :                   :         : 2         :                
+GND*                         : 97        :        :                   :         : 2         :                
 GND*                         : 98        :        :                   :         : 2         :                
 GND*                         : 99        :        :                   :         : 2         :                
-segundos_unidades[0]         : 100       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 100       :        :                   :         : 2         :                
