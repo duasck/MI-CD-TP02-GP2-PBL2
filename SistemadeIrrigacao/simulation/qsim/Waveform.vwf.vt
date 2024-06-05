@@ -19,36 +19,36 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/03/2024 01:04:11"
+// Generated on "06/04/2024 23:38:45"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          us
+// Verilog Test Bench (with test vectors) for design :                          top_module
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module us_vlg_vec_tst();
+module top_module_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg [3:0] D;
 reg clk;
-reg rst;
+reg reset;
 // wires                                               
-wire carry;
-wire q0;
-wire q1;
-wire q2;
-wire q3;
+wire [3:0] minutos_decenas;
+wire [3:0] minutos_unidades;
+wire [3:0] segundos_decenas;
+wire [3:0] segundos_unidades;
 
 // assign statements (if any)                          
-us i1 (
+top_module i1 (
 // port map - connection between master ports and signals/registers   
-	.carry(carry),
+	.D(D),
 	.clk(clk),
-	.q0(q0),
-	.q1(q1),
-	.q2(q2),
-	.q3(q3),
-	.rst(rst)
+	.minutos_decenas(minutos_decenas),
+	.minutos_unidades(minutos_unidades),
+	.reset(reset),
+	.segundos_decenas(segundos_decenas),
+	.segundos_unidades(segundos_unidades)
 );
 initial 
 begin 
@@ -59,14 +59,36 @@ end
 always
 begin
 	clk = 1'b0;
-	clk = #5000 1'b1;
-	#5000;
+	clk = #2500 1'b1;
+	#2500;
 end 
-
-// rst
+// D[ 3 ]
 initial
 begin
-	rst = 1'b0;
+	D[3] = 1'b1;
+	D[3] = #5000 1'b0;
+end 
+// D[ 2 ]
+initial
+begin
+	D[2] = 1'b0;
+end 
+// D[ 1 ]
+initial
+begin
+	D[1] = 1'b0;
+end 
+// D[ 0 ]
+initial
+begin
+	D[0] = 1'b1;
+	D[0] = #5000 1'b0;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b0;
 end 
 endmodule
 

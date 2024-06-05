@@ -1,0 +1,36 @@
+module reversible_master_slave_d_flip_flop (
+    input wire C,
+    input wire L,
+    input wire [3:0] D,  // 4-bit input
+    input wire CP,       // Clock
+    output wire [3:0] Q  // 4-bit output
+);
+    wire C_not, L_and_C_not;
+    wire F0, F1, F2, F3;
+    wire F0_and_D0, F1_and_D1, F2_and_D2, F3_and_D3;
+
+    // NOT gate for C
+    assign C_not = ~C;
+
+    // AND gate for L and C_not
+    assign L_and_C_not = L & C_not;
+
+    // AND gates for D0, D1, D2, D3
+    assign F0_and_D0 = L_and_C_not & D[0];
+    assign F1_and_D1 = L & D[1];
+    assign F2_and_D2 = L & D[2];
+    assign F3_and_D3 = L & D[3];
+
+    // OR gates to generate final inputs to the flip-flops
+    assign F0 = F0_and_D0 | F1_and_D1;
+    assign F1 = F0_and_D0 | F2_and_D2;
+    assign F2 = F0_and_D0 | F3_and_D3;
+    assign F3 = F0_and_D0 | F3_and_D3;
+
+    // D Flip-Flops
+    d_flip_flop DFF0 (.D(F0), .CLK(CP), .RESET(1'b1), .PRESET(1'b1), .Q(Q[0]), .Qn());
+    d_flip_flop DFF1 (.D(F1), .CLK(CP), .RESET(1'b1), .PRESET(1'b1), .Q(Q[1]), .Qn());
+    d_flip_flop DFF2 (.D(F2), .CLK(CP), .RESET(1'b1), .PRESET(1'b1), .Q(Q[2]), .Qn());
+    d_flip_flop DFF3 (.D(F3), .CLK(CP), .RESET(1'b1), .PRESET(1'b1), .Q(Q[3]), .Qn());
+
+endmodule

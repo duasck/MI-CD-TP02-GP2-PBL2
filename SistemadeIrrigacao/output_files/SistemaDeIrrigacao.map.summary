@@ -1,5 +1,9 @@
-Analysis & Synthesis Status : Failed - Mon Jun 03 01:09:33 2024
+Analysis & Synthesis Status : Successful - Tue Jun 04 23:34:25 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SistemaDeIrrigacao
-Top-level Entity Name : us
+Top-level Entity Name : top_module
 Family : MAX II
+Total logic elements : 0
+Total pins : 22
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

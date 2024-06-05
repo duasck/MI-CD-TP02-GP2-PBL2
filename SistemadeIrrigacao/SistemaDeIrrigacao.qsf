@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY us
+set_global_assignment -name TOP_LEVEL_ENTITY down_count
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -69,7 +69,6 @@ set_location_assignment PIN_33 -to switch
 set_location_assignment PIN_90 -to a
 set_location_assignment PIN_70 -to b
 set_location_assignment PIN_41 -to c
-set_location_assignment PIN_98 -to d
 set_location_assignment PIN_100 -to e
 set_location_assignment PIN_92 -to f
 set_location_assignment PIN_39 -to g
@@ -105,3 +104,9 @@ set_global_assignment -name VERILOG_FILE contador_bcd.v
 set_global_assignment -name VERILOG_FILE jk_flipflop.v
 set_global_assignment -name VERILOG_FILE decrescente.v
 set_global_assignment -name VERILOG_FILE us.v
+set_global_assignment -name VERILOG_FILE jk_flip_flop.v
+set_global_assignment -name VERILOG_FILE d_flip_flop.v
+set_global_assignment -name VERILOG_FILE reversible_master_slave_d_flip_flop.v
+set_global_assignment -name VERILOG_FILE down_count.v
+set_global_assignment -name VERILOG_FILE jk_ff.v
+set_global_assignment -name VERILOG_FILE top_module.v

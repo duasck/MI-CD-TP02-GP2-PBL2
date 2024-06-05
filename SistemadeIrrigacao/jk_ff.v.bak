@@ -1,0 +1,23 @@
+module jk_ff (
+    input wire clk,
+    input wire j,
+    input wire k,
+    input wire r,
+    input wire d,
+    output reg q
+);
+    always @(posedge clk or negedge r) begin
+        if (!r)
+            q <= 1'b0;
+        else if (d)
+            q <= d;
+        else begin
+            if (j & ~k)
+                q <= 1'b1;
+            else if (~j & k)
+                q <= 1'b0;
+            else if (j & k)
+                q <= ~q;
+        end
+    end
+endmodule

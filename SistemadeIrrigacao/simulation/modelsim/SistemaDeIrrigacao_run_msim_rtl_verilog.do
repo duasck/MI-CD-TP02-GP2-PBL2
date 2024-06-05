@@ -5,5 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/SistemadeIrrigacao {D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v}
+vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/SistemadeIrrigacao {D:/Dev/Verilog/SistemadeIrrigacao/d_flip_flop.v}
+vlog -vlog01compat -work work +incdir+D:/Dev/Verilog/SistemadeIrrigacao {D:/Dev/Verilog/SistemadeIrrigacao/reversible_master_slave_d_flip_flop.v}
 

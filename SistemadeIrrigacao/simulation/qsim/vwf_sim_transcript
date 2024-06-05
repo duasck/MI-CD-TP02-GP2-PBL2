@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Jun 03 01:04:11 2024
+    Info: Processing started: Tue Jun 04 23:38:44 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao --vector_source=D:/Dev/Verilog/SistemadeIrrigacao/Waveform.vwf --testbench_file=D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,14 +55,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Jun 03 01:04:12 2024
+    Info: Processing started: Tue Jun 04 23:38:45 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/ SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file SistemaDeIrrigacao.vo in folder "D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4617 megabytes
-    Info: Processing ended: Mon Jun 03 01:04:12 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Jun 04 23:38:46 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -79,43 +79,43 @@ C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem//vsim -c -do SistemaDeIrrigacao.d
 
 Reading pref.tcl
 
+
 # 2020.1
 
 # do SistemaDeIrrigacao.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:04:14 on Jun 03,2024
+# Start time: 23:38:47 on Jun 04,2024
 # vlog -work work SistemaDeIrrigacao.vo 
-# -- Compiling module us
+
+# -- Compiling module top_module
 # 
 # Top level modules:
-# 	us
-# End time: 01:04:14 on Jun 03,2024, Elapsed time: 0:00:00
+# 	top_module
+# End time: 23:38:47 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:04:14 on Jun 03,2024
+# Start time: 23:38:47 on Jun 04,2024
 # vlog -work work Waveform.vwf.vt 
 
-# -- Compiling module us_vlg_vec_tst
+# -- Compiling module top_module_vlg_vec_tst
 # 
 # Top level modules:
-# 	us_vlg_vec_tst
-# End time: 01:04:14 on Jun 03,2024, Elapsed time: 0:00:00
+# 	top_module_vlg_vec_tst
+# End time: 23:38:48 on Jun 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.us_vlg_vec_tst 
-# Start time: 01:04:14 on Jun 03,2024
-# Loading work.us_vlg_vec_tst
-# Loading work.us
+# vsim -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_module_vlg_vec_tst 
+# Start time: 23:38:48 on Jun 04,2024
+# Loading work.top_module_vlg_vec_tst
+# Loading work.top_module
 # Loading maxii_ver.maxii_io
 # after#25
-
 # ** Note: $finish    : Waveform.vwf.vt(55)
-#    Time: 100 ns  Iteration: 0  Instance: /us_vlg_vec_tst
-# End time: 01:04:15 on Jun 03,2024, Elapsed time: 0:00:01
+#    Time: 100 ns  Iteration: 0  Instance: /top_module_vlg_vec_tst
+# End time: 23:38:48 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -128,7 +128,7 @@ Reading D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao.msi
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao_20240603010415.sim.vwf
+Writing the resulting VWF to D:/Dev/Verilog/SistemadeIrrigacao/simulation/qsim/SistemaDeIrrigacao_20240604233848.sim.vwf
 
 Finished VCD to VWF conversion.
 
