@@ -18,7 +18,6 @@ module down_count (
     not (n0, clk);
     not (n1, up_down);
     not (n2, n1);
-    not (n3, load);
     not (n4, cten);
 
     // Portas AND para condições de ativação dos flip-flops JK

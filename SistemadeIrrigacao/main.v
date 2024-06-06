@@ -1,7 +1,7 @@
 module main(
-    input H, 				 //Nível alto
-	 input M, 				 //Nível Médio
-	 input L,				 //Nível Baixo
+    input HH, 				 //Nível alto
+	 input MM, 				 //Nível Médio
+	 input LL,				 //Nível Baixo
 	 input Ua,				 //Umidade do ar
 	 input Us,				 //Umidade do Solo
 	 input T,				 //Temperatura
@@ -10,7 +10,6 @@ module main(
 	 input clk, 			 //Sinal de clock
     output Erro, 			 //Sinal de erro
 	 output Alarme, 		 //Alarme
-	 output V, 				 //Nível Vazio
 	 output Ve, 			 //Válvula de entrada
 	 output Bs, 			 //Válvula de aspersão
 	 output Vs, 			 //Válvulade Gotejamento
@@ -20,12 +19,16 @@ module main(
 	 output d, 				 // a-g: Saídas para os displays de 7 segmentos
 	 output e, 				 
 	 output f, 				 
-	 output g, 				 
-	 output clk7seg,		 //Sinal de clock para os displays de 7 segmentos
-	 output clkLeds, 		 //Sinal de clock da matriz de LEDs
+	 output g,
+	 output d01,
+	 output d02,
+	 output d03,
+	 output d04,
     output [4:0] coluna, //Saída das colunas da matriz de LEDs
     output [6:0] linha	 //Saída das linhas da matriz de LEDs
 );
+	
+	wire clk7seg, clkLeds, V, H, M, L;
 		
 	// Instancia do módulo de irrigação
 	sistemaIrrigacao irrigacao_inst (.H(H), .M(M), .L(L), .Ua(Ua), 
@@ -33,48 +36,45 @@ module main(
 	);
 	
 	 // Instancia do módulo de nivel
-    sistemaNivel nivel_inst (.H(H), .M(M), .L(L), .Cheio(Cheio), .Medio(Medio), 
-	 .Baixo(Baixo), .Vazio(V), .Erro(Erro), .Alarme(Alarme), .Ve(Ve)
+    sistemaNivel nivel_inst (.H(HH), .M(MM), .L(LL), .Cheio(H), .Medio(M), 
+	 .Baixo(L), .Vazio(V), .Erro(Erro), .Alarme(Alarme), .Ve(Ve)
 	 );
 	
-	// Divisor de clock da matriz de LEDs
+	// Divisores de clock
 	divisorLeds divisor(.clk(clk), .clkLeds(clkLeds));
-	
+	divisor7seg(.clk(clkLeds), .clk7seg(clk7seg));
 	// Deslocamento da coluna dos LEDs
 	deslocamento_coluna_leds dc(.clk(clkLeds), .coluna(coluna));
 	
-	// Atribuição do valor da última coluna
-	//assign coluna[4] = 1;
-	
 	// Atribuição dos valores para as linhas da matriz de LEDs
-	assign linha[0] = !(((switch) && ((M && (coluna[2])) || (V && (coluna[3] || coluna[2] || coluna[3]))))
-	|| ((~switch) && (coluna[2] || coluna[1])));
+	assign linha[0] = ~(((switch) && ((M && (coluna[2])) || (V && (coluna[1] || coluna[2] || coluna[3]))))
+	|| ((~switch) && (coluna[2] || coluna[3])));
 	
-	assign linha[1] = !(((switch) && ((L && coluna[3]) || (H && (coluna[3] || coluna[0])) || (V && coluna[3])))
-	|| ((~switch) && (coluna[3] || coluna[0])));
+	assign linha[1] = !(((switch) && ((L && coluna[1]) || (H && (coluna[1] || coluna[4])) || (V && coluna[1])))
+	|| ((~switch) && (coluna[1] || coluna[4])));
 	
-	assign linha[2] = !(((switch) && ((L && coluna[3]) || (M && coluna[2]) || (H && (coluna[3] || coluna[0])) 
-	|| (V && coluna[3])) || ((~switch) && ((Bs && (coluna[3] || coluna[0]) || (Vs && coluna[3]))))));
+	assign linha[2] = !(((switch) && ((L && coluna[1]) || (M && coluna[2]) || (H && (coluna[1] || coluna[4])) 
+	|| (V && coluna[1])) || ((~switch) && ((Bs && (coluna[1] || coluna[4]) || (Vs && coluna[1]))))));
 	
-	assign linha[3] = !(((switch) && ((L && coluna[3]) || (M && coluna[2]) || (H && (coluna[3] || coluna[2] 
-	|| coluna[1] || coluna[0])) || (V && (coluna[3] || coluna[2])))) || ((~switch) && (Bs && (coluna[3] || coluna[2] 
-	|| coluna[1] || coluna[0]) || (Vs && (coluna[3] || coluna[1] || coluna[0])))));
+	assign linha[3] = !(((switch) && ((L && coluna[1]) || (M && coluna[2]) || (H && (coluna[1] || coluna[2] 
+	|| coluna[3] || coluna[4])) || (V && (coluna[1] || coluna[2])))) || ((~switch) && (Bs && (coluna[1] || coluna[2] 
+	|| coluna[3] || coluna[4]) || (Vs && (coluna[1] || coluna[3] || coluna[4])))));
 	
-	assign linha[4] = !(((switch) && ((L && coluna[3]) || (M && coluna[2]) || (H && (coluna[3] || coluna[0])) 
-	|| (V && coluna[3]))) || ((~switch) && (coluna[3] || coluna[0])));
+	assign linha[4] = !(((switch) && ((L && coluna[1]) || (M && coluna[2]) || (H && (coluna[1] || coluna[4])) 
+	|| (V && coluna[1]))) || ((~switch) && (coluna[1] || coluna[4])));
 	
-	assign linha[5] = !(((switch) && ((L && coluna[3]) || (M && coluna[2]) || (H && (coluna[3] || coluna[0])) 
-	|| (V && coluna[3]))) || ((~switch) && (coluna[3] || coluna[0])));
+	assign linha[5] = !(((switch) && ((L && coluna[1]) || (M && coluna[2]) || (H && (coluna[1] || coluna[4])) 
+	|| (V && coluna[1]))) || ((~switch) && (coluna[1] || coluna[4])));
 	
-	assign linha[6] = !(((switch) && ((L && (coluna[3] || coluna[2] || coluna[1])) || (M && coluna[2]) 
-	|| (H && (coluna[3] || coluna[0])) || (V && (coluna[3] || coluna[2] || coluna[1])))) 
-	|| ((~switch) && ((Vs && (coluna[3] || coluna[0]))|| (Bs && (coluna[2] || coluna[1])))));
+	assign linha[6] = !(((switch) && ((L && (coluna[1] || coluna[2] || coluna[3])) || (M && coluna[2]) 
+	|| (H && (coluna[1] || coluna[4])) || (V && (coluna[1] || coluna[2] || coluna[3])))) 
+	|| ((~switch) && ((Bs && (coluna[1] || coluna[4]))|| (Vs && (coluna[2] || coluna[3])))));
 
 	
 	wire [3:0] dezSeg, dezMin, uniMin, uniSeg;
 	
 	//modulo de contadores em cascata
-	matriz7seg m7 (.clk(clk), .reset(reiniciar), .vs(Vs), .Dseg(dezSeg), .Useg(uniSeg), .Umin(uniMin), .Dmin(dezMin));
+	matriz7seg m7 (.clk(clk), .reset(), .vs(Vs), .Dseg(dezSeg), .Useg(uniSeg), .Umin(uniMin), .Dmin(dezMin), .clk1seg(clk7seg));
 	wire [6:0] d1, d2, d3, d4;
 	
 	//Unidade de segundo
@@ -95,20 +95,27 @@ module main(
 	
 	//Selecionar uma das 4 matrizes
 	wire [1:0] select;
-	binary_counter_2bit(.clk(clk), .reset(reiniciar), .q(select));
+	wire [4:0] select_dig;
+	binary_counter_2bit(.clk(clk7seg), .reset(), .q(select));
 	wire [6:0] out7seg;
 	
 	//Mux 4x1
 	mux_4x1 mux4x1 (.A(d1), .B(d2), .C(d3), .D(d4), .SEL(select), .out(out7seg));
 	
-	assign a = out7seg[6];
-	assign b = out7seg[5];
-	assign c = out7seg[4];
-	assign d = out7seg[3];
-	assign e = out7seg[2];
-	assign f = out7seg[1];
-	assign g = out7seg[0];
+	
+   mux_4x1bit(.SEL(select), .out(select_dig));
+
+   assign d01 = select_dig[0];
+   assign d02 = select_dig[1];
+   assign d03 = select_dig[2];
+   assign d04 = select_dig[3];
+	
+	assign a = ~out7seg[6];
+	assign b = ~out7seg[5];
+	assign c = ~out7seg[4];
+	assign d = ~out7seg[3];
+	assign e = ~out7seg[2];
+	assign f = ~out7seg[1];
+	assign g = ~out7seg[0];
 	
 endmodule
-
-
