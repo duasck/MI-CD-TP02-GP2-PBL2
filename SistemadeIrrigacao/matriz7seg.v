@@ -1,4 +1,4 @@
-module top_module (
+module matriz7seg (
     input wire clk,
     input wire reset,
 	 input vs,
@@ -19,7 +19,6 @@ module top_module (
     initial begin
         lo = 1;
     end
-	
 	
     divisorLeds d0 (.clk(clk), .clkLeds(clk0));
     divisor7seg d1 (.clk(clk0), .clk7seg(clk1seg));

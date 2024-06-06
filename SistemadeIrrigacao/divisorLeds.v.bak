@@ -1,4 +1,4 @@
-module freq_1 (clk, clkLeds);
+module divisorLeds (clk, clkLeds);
 
 input clk;
 output clkLeds;

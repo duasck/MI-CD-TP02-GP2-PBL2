@@ -55,7 +55,8 @@ module main(clk, clk7seg, clkLeds, H, M, L, V, Ua, Us, T, switch, reiniciar, Err
 	 );
 	wire [3:0] dezSeg, dezMin, uniMin, uniSeg;
 	
-	top_module(.clk(clk), .reset(reiniciar), .vs(Vs), .Dseg(dezSeg), .Useg(uniSeg), .Umin(uniMin), .Dmin(dezMin));
+	//modulo de contadores em cascata
+	matriz7seg m7 (.clk(clk), .reset(reiniciar), .vs(Vs), .Dseg(dezSeg), .Useg(uniSeg), .Umin(uniMin), .Dmin(dezMin));
 	wire [6:0] d0, d1, d2, d3;
 	
 	//unidade de segundo
@@ -67,11 +68,20 @@ module main(clk, clk7seg, clkLeds, H, M, L, V, Ua, Us, T, switch, reiniciar, Err
 	//dezena de minuto
 	decod7seg dec3 (.A(dezMin[3]), .B(dezMin[2]), .C(dezMin[1]), .D(dezMin[0]), .a(d3[6]), .b(d3[5]), .c(d3[4]), .d(d3[3]), .e(d3[2]), .f(d3[1]), .g(d3[0]));
 	
-	//mux2_1(.A(), .B(), .C(), .D(), .SEL(), .out())
-//	1000;
- //  0100;
-  // 0010;
- //  0001;
+	//selecionar uma das 4 matrizes
+	wire [1:0] select;
+	binary_counter_2bit(.clk(clk), .reset(reiniciar), .q(select));
+	wire [6:0] out7seg;
+	//mux 4x1
+	mux_4x1 mux4x1 (.A(d0), .B(d1), .C(d2), .D(d3), .SEL(select), .out(out7seg));
+	
+	assign a = out7seg[6];
+	assign b = out7seg[5];
+	assign c = out7seg[4];
+	assign d = out7seg[3];
+	assign e = out7seg[2];
+	assign f = out7seg[1];
+	assign g = out7seg[0];
 	
 endmodule
 

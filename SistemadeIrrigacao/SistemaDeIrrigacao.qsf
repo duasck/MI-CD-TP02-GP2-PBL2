@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX II"
 set_global_assignment -name DEVICE EPM240T100C5
-set_global_assignment -name TOP_LEVEL_ENTITY mux2_1
+set_global_assignment -name TOP_LEVEL_ENTITY deslocamento_coluna_leds
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:54:22  MAY 19, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -93,16 +93,13 @@ set_global_assignment -name VERILOG_FILE sistemaNivel.v
 set_global_assignment -name VERILOG_FILE sistemaIrrigacao.v
 set_global_assignment -name VERILOG_FILE decod7seg.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VERILOG_FILE mux2_1.v
 set_global_assignment -name VERILOG_FILE d_ff.v
 set_global_assignment -name VERILOG_FILE down_count.v
 set_global_assignment -name VERILOG_FILE jk_ff.v
-set_global_assignment -name VERILOG_FILE top_module.v
-set_global_assignment -name VERILOG_FILE ff_d.v
-set_global_assignment -name VERILOG_FILE d_flip_flop.v
 set_global_assignment -name VERILOG_FILE deslocamento_coluna_leds.v
 set_global_assignment -name VERILOG_FILE divisor7seg.v
 set_global_assignment -name VERILOG_FILE divisorLeds.v
-set_global_assignment -name VERILOG_FILE comparator.v
-set_global_assignment -name VERILOG_FILE logic_gates.v
 set_global_assignment -name VERILOG_FILE mux2to1.v
+set_global_assignment -name VERILOG_FILE binary_counter_2bit.v
+set_global_assignment -name VERILOG_FILE matriz7seg.v
+set_global_assignment -name VERILOG_FILE mux_4x1.v

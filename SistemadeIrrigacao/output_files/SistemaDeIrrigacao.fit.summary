@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Jun 05 23:04:48 2024
+Fitter Status : Successful - Thu Jun 06 00:22:58 2024
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SistemaDeIrrigacao
-Top-level Entity Name : mux2to1
+Top-level Entity Name : deslocamento_coluna_leds
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 4 / 240 ( 2 % )
-Total pins : 13 / 80 ( 16 % )
+Total logic elements : 5 / 240 ( 2 % )
+Total pins : 6 / 80 ( 8 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

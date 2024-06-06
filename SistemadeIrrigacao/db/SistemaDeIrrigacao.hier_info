@@ -1,19 +1,13 @@
-|mux2to1
-in0[0] => out.DATAA
-in0[1] => out.DATAA
-in0[2] => out.DATAA
-in0[3] => out.DATAA
-in1[0] => out.DATAB
-in1[1] => out.DATAB
-in1[2] => out.DATAB
-in1[3] => out.DATAB
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-sel => out.OUTPUTSELECT
-out[0] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] << out.DB_MAX_OUTPUT_PORT_TYPE
-out[3] << out.DB_MAX_OUTPUT_PORT_TYPE
+|deslocamento_coluna_leds
+clk => coluna[0]~reg0.CLK
+clk => coluna[1]~reg0.CLK
+clk => coluna[2]~reg0.CLK
+clk => coluna[3]~reg0.CLK
+clk => coluna[4]~reg0.CLK
+coluna[0] <= coluna[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+coluna[1] <= coluna[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+coluna[2] <= coluna[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+coluna[3] <= coluna[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+coluna[4] <= coluna[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

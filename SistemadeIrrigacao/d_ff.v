@@ -1,4 +1,4 @@
-module d_ff (
+module d_ff ( //usando no divisor
     input wire clk,
     input wire reset,
     input wire D,

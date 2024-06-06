@@ -19,40 +19,26 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/05/2024 22:59:49"
+// Generated on "06/06/2024 00:23:50"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          top_module
+// Verilog Test Bench (with test vectors) for design :                          deslocamento_coluna_leds
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module top_module_vlg_vec_tst();
+module deslocamento_coluna_leds_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg reset;
-reg vs;
 // wires                                               
-wire [3:0] Dmin;
-wire [3:0] Dseg;
-wire [3:0] Umin;
-wire [3:0] Useg;
-wire [3:0] dezenas_min;
-wire [3:0] unidades_min;
+wire [4:0] coluna;
 
 // assign statements (if any)                          
-top_module i1 (
+deslocamento_coluna_leds i1 (
 // port map - connection between master ports and signals/registers   
-	.Dmin(Dmin),
-	.Dseg(Dseg),
-	.Umin(Umin),
-	.Useg(Useg),
 	.clk(clk),
-	.dezenas_min(dezenas_min),
-	.reset(reset),
-	.unidades_min(unidades_min),
-	.vs(vs)
+	.coluna(coluna)
 );
 initial 
 begin 
@@ -63,20 +49,8 @@ end
 always
 begin
 	clk = 1'b0;
-	clk = #500 1'b1;
-	#500;
-end 
-
-// reset
-initial
-begin
-	reset = 1'b0;
-end 
-
-// vs
-initial
-begin
-	vs = 1'b1;
+	clk = #5000 1'b1;
+	#5000;
 end 
 endmodule
 
