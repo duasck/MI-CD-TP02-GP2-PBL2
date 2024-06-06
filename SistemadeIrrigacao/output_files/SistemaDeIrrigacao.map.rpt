@@ -1,6 +1,6 @@
 Analysis & Synthesis report for SistemaDeIrrigacao
-Wed Jun  5 20:34:56 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Wed Jun 05 23:16:42 2024
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -10,19 +10,15 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
- 10. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,19 +35,15 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Jun  5 20:34:56 2024          ;
-; Quartus Prime Version       ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name               ; SistemaDeIrrigacao                             ;
-; Top-level Entity Name       ; freq_1                                         ;
-; Family                      ; MAX II                                         ;
-; Total logic elements        ; 26                                             ;
-; Total pins                  ; 3                                              ;
-; Total virtual pins          ; 0                                              ;
-; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
-+-----------------------------+------------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Jun 05 23:16:42 2024           ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; SistemaDeIrrigacao                          ;
+; Top-level Entity Name       ; mux2_1                                      ;
+; Family                      ; MAX II                                      ;
++-----------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -60,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EPM240T100C5       ;                    ;
-; Top-level entity name                                            ; freq_1             ; SistemaDeIrrigacao ;
+; Top-level entity name                                            ; mux2_1             ; SistemaDeIrrigacao ;
 ; Family name                                                      ; MAX II             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -130,8 +122,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -141,189 +133,62 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-; ff_d.v                           ; yes             ; User Verilog HDL File  ; C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/ff_d.v   ;         ;
-; freq_1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/freq_1.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Total logic elements                        ; 26            ;
-;     -- Combinational with no register       ; 0             ;
-;     -- Register only                        ; 0             ;
-;     -- Combinational with a register        ; 26            ;
-;                                             ;               ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 0             ;
-;     -- 3 input functions                    ; 0             ;
-;     -- 2 input functions                    ; 0             ;
-;     -- 1 input functions                    ; 26            ;
-;     -- 0 input functions                    ; 0             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 26            ;
-;     -- arithmetic mode                      ; 0             ;
-;     -- qfbk mode                            ; 0             ;
-;     -- register cascade mode                ; 0             ;
-;     -- synchronous clear/load mode          ; 0             ;
-;     -- asynchronous clear/load mode         ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 26            ;
-; I/O pins                                    ; 3             ;
-; Maximum fan-out node                        ; ff_d:dff_15|Q ;
-; Maximum fan-out                             ; 3             ;
-; Total fan-out                               ; 54            ;
-; Average fan-out                             ; 1.86          ;
-+---------------------------------------------+---------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |freq_1                    ; 26 (0)      ; 26           ; 0          ; 3    ; 0            ; 0 (0)        ; 0 (0)             ; 26 (0)           ; 0 (0)           ; 0 (0)      ; |freq_1             ; freq_1      ; work         ;
-;    |ff_d:dff_0|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_0  ; ff_d        ; work         ;
-;    |ff_d:dff_10|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_10 ; ff_d        ; work         ;
-;    |ff_d:dff_11|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_11 ; ff_d        ; work         ;
-;    |ff_d:dff_12|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_12 ; ff_d        ; work         ;
-;    |ff_d:dff_13|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_13 ; ff_d        ; work         ;
-;    |ff_d:dff_14|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_14 ; ff_d        ; work         ;
-;    |ff_d:dff_15|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_15 ; ff_d        ; work         ;
-;    |ff_d:dff_16|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_16 ; ff_d        ; work         ;
-;    |ff_d:dff_17|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_17 ; ff_d        ; work         ;
-;    |ff_d:dff_18|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_18 ; ff_d        ; work         ;
-;    |ff_d:dff_19|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_19 ; ff_d        ; work         ;
-;    |ff_d:dff_1|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_1  ; ff_d        ; work         ;
-;    |ff_d:dff_20|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_20 ; ff_d        ; work         ;
-;    |ff_d:dff_21|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_21 ; ff_d        ; work         ;
-;    |ff_d:dff_22|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_22 ; ff_d        ; work         ;
-;    |ff_d:dff_23|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_23 ; ff_d        ; work         ;
-;    |ff_d:dff_24|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_24 ; ff_d        ; work         ;
-;    |ff_d:dff_25|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_25 ; ff_d        ; work         ;
-;    |ff_d:dff_2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_2  ; ff_d        ; work         ;
-;    |ff_d:dff_3|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_3  ; ff_d        ; work         ;
-;    |ff_d:dff_4|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_4  ; ff_d        ; work         ;
-;    |ff_d:dff_5|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_5  ; ff_d        ; work         ;
-;    |ff_d:dff_6|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_6  ; ff_d        ; work         ;
-;    |ff_d:dff_7|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_7  ; ff_d        ; work         ;
-;    |ff_d:dff_8|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_8  ; ff_d        ; work         ;
-;    |ff_d:dff_9|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |freq_1|ff_d:dff_9  ; ff_d        ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 26    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun  5 20:34:39 2024
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Jun 05 23:16:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SistemaDeIrrigacao -c SistemaDeIrrigacao
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/main.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Error (10170): Verilog HDL syntax error at main.v(71) near text: "1000";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 71
+Error (10112): Ignored design unit "main" at main.v(1) due to previous errors File: D:/Dev/Verilog/SistemadeIrrigacao/main.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file main.v
 Info (12021): Found 1 design units, including 1 entities, in source file sistemanivel.v
-    Info (12023): Found entity 1: sistemaNivel File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/sistemaNivel.v Line: 1
+    Info (12023): Found entity 1: sistemaNivel File: D:/Dev/Verilog/SistemadeIrrigacao/sistemaNivel.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sistemairrigacao.v
-    Info (12023): Found entity 1: sistemaIrrigacao File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/sistemaIrrigacao.v Line: 1
+    Info (12023): Found entity 1: sistemaIrrigacao File: D:/Dev/Verilog/SistemadeIrrigacao/sistemaIrrigacao.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decod7seg.v
-    Info (12023): Found entity 1: decod7seg File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/decod7seg.v Line: 1
+    Info (12023): Found entity 1: decod7seg File: D:/Dev/Verilog/SistemadeIrrigacao/decod7seg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.v
-    Info (12023): Found entity 1: mux2_1 File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/mux2_1.v Line: 1
+    Info (12023): Found entity 1: mux2_1 File: D:/Dev/Verilog/SistemadeIrrigacao/mux2_1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff.v
-    Info (12023): Found entity 1: d_ff File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/d_ff.v Line: 1
+    Info (12023): Found entity 1: d_ff File: D:/Dev/Verilog/SistemadeIrrigacao/d_ff.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file down_count.v
-    Info (12023): Found entity 1: down_count File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 1
+    Info (12023): Found entity 1: down_count File: D:/Dev/Verilog/SistemadeIrrigacao/down_count.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file jk_ff.v
-    Info (12023): Found entity 1: jk_ff File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/jk_ff.v Line: 1
+    Info (12023): Found entity 1: jk_ff File: D:/Dev/Verilog/SistemadeIrrigacao/jk_ff.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top_module.v
-    Info (12023): Found entity 1: top_module File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/top_module.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file gatilho.v
-    Info (12023): Found entity 1: gatilho File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/gatilho.v Line: 1
+    Info (12023): Found entity 1: top_module File: D:/Dev/Verilog/SistemadeIrrigacao/top_module.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ff_d.v
-    Info (12023): Found entity 1: ff_d File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/ff_d.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file freq_1.v
-    Info (12023): Found entity 1: freq_1 File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/freq_1.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file initialize_to_1_then_0.v
-    Info (12023): Found entity 1: initialize_to_1_then_0 File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/initialize_to_1_then_0.v Line: 1
+    Info (12023): Found entity 1: ff_d File: D:/Dev/Verilog/SistemadeIrrigacao/ff_d.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file d_flip_flop.v
-    Info (12023): Found entity 1: d_flip_flop File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/d_flip_flop.v Line: 1
+    Info (12023): Found entity 1: d_flip_flop File: D:/Dev/Verilog/SistemadeIrrigacao/d_flip_flop.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deslocamento_coluna_leds.v
-    Info (12023): Found entity 1: deslocamento_coluna_leds File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/deslocamento_coluna_leds.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at main.v(53): created implicit net for "Cheio" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/main.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at main.v(53): created implicit net for "Medio" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/main.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at main.v(54): created implicit net for "Baixo" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/main.v Line: 54
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(14): created implicit net for "n0" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(15): created implicit net for "n1" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(16): created implicit net for "n2" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(17): created implicit net for "n3" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(18): created implicit net for "n4" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(20): created implicit net for "a0" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(21): created implicit net for "a1" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(22): created implicit net for "a2" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(23): created implicit net for "a3" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(24): created implicit net for "a4" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 24
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(25): created implicit net for "a5" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 25
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(26): created implicit net for "a6" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 26
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(27): created implicit net for "a7" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 27
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(28): created implicit net for "a8" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(29): created implicit net for "a9" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(31): created implicit net for "na0" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(32): created implicit net for "na1" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(33): created implicit net for "na2" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(34): created implicit net for "na3" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 34
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(35): created implicit net for "na4" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 35
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(36): created implicit net for "na5" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(37): created implicit net for "na6" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(38): created implicit net for "na7" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(39): created implicit net for "na8" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(39): created implicit net for "o0" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(42): created implicit net for "o1" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(43): created implicit net for "o2" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at down_count.v(44): created implicit net for "o3" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/down_count.v Line: 44
-Info (12127): Elaborating entity "freq_1" for the top level hierarchy
-Info (12128): Elaborating entity "ff_d" for hierarchy "ff_d:dff_0" File: C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/freq_1.v Line: 8
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 26 logic cells
-Info (144001): Generated suppressed messages file C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Wed Jun  5 20:34:56 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (12023): Found entity 1: deslocamento_coluna_leds File: D:/Dev/Verilog/SistemadeIrrigacao/deslocamento_coluna_leds.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor7seg.v
+    Info (12023): Found entity 1: divisor7seg File: D:/Dev/Verilog/SistemadeIrrigacao/divisor7seg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisorleds.v
+    Info (12023): Found entity 1: divisorLeds File: D:/Dev/Verilog/SistemadeIrrigacao/divisorLeds.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
+    Info (12023): Found entity 1: comparator File: D:/Dev/Verilog/SistemadeIrrigacao/comparator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_gates.v
+    Info (12023): Found entity 1: logic_gates File: D:/Dev/Verilog/SistemadeIrrigacao/logic_gates.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.v
+    Info (12023): Found entity 1: mux2to1 File: D:/Dev/Verilog/SistemadeIrrigacao/mux2to1.v Line: 1
+Info (144001): Generated suppressed messages file D:/Dev/Verilog/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4688 megabytes
+    Error: Processing ended: Wed Jun 05 23:16:42 2024
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/danlu/OneDrive/Documentos/PBL CD/PBL 2/MI-CD-TP02-GP2-PBL2-main/MI-CD-TP02-GP2-PBL2-main/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg.
+The suppressed messages can be found in D:/Dev/Verilog/SistemadeIrrigacao/output_files/SistemaDeIrrigacao.map.smsg.
 
 

@@ -53,9 +53,26 @@ module main(clk, clk7seg, clkLeds, H, M, L, V, Ua, Us, T, switch, reiniciar, Err
     sistemaNivel nivel_inst (.H(H), .M(M), .L(L), .Cheio(Cheio), .Medio(Medio), 
 	 .Baixo(Baixo), .Vazio(V), .Erro(Erro), .Alarme(Alarme), .Ve(Ve)
 	 );
-	 
-
-	 
+	wire [3:0] dezSeg, dezMin, uniMin, uniSeg;
+	
+	top_module(.clk(clk), .reset(reiniciar), .vs(Vs), .Dseg(dezSeg), .Useg(uniSeg), .Umin(uniMin), .Dmin(dezMin));
+	wire [6:0] d0, d1, d2, d3;
+	
+	//unidade de segundo
+	decod7seg dec0 (.A(uniSeg[3]), .B(uniSeg[2]), .C(uniSeg[1]), .D(uniSeg[0]), .a(d0[6]), .b(d0[5]), .c(d0[4]), .d(d0[3]), .e(d0[2]), .f(d0[1]), .g(d0[0]));
+	//dezena de segundo
+	decod7seg dec1 (.A(dezSeg[3]), .B(dezSeg[2]), .C(dezSeg[1]), .D(dezSeg[0]), .a(d1[6]), .b(d1[5]), .c(d1[4]), .d(d1[3]), .e(d1[2]), .f(d1[1]), .g(d1[0]));
+	//unidade de minuto
+	decod7seg dec2 (.A(uniMin[3]), .B(uniMin[2]), .C(uniMin[1]), .D(uniMin[0]), .a(d2[6]), .b(d2[5]), .c(d2[4]), .d(d2[3]), .e(d2[2]), .f(d2[1]), .g(d2[0]));
+	//dezena de minuto
+	decod7seg dec3 (.A(dezMin[3]), .B(dezMin[2]), .C(dezMin[1]), .D(dezMin[0]), .a(d3[6]), .b(d3[5]), .c(d3[4]), .d(d3[3]), .e(d3[2]), .f(d3[1]), .g(d3[0]));
+	
+	//mux2_1(.A(), .B(), .C(), .D(), .SEL(), .out())
+//	1000;
+ //  0100;
+  // 0010;
+ //  0001;
+	
 endmodule
 
 

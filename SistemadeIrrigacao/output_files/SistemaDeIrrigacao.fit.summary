@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Jun  5 20:34:59 2024
-Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Fitter Status : Successful - Wed Jun 05 23:04:48 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SistemaDeIrrigacao
-Top-level Entity Name : freq_1
+Top-level Entity Name : mux2to1
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 26 / 240 ( 11 % )
-Total pins : 3 / 80 ( 4 % )
+Total logic elements : 4 / 240 ( 2 % )
+Total pins : 13 / 80 ( 16 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

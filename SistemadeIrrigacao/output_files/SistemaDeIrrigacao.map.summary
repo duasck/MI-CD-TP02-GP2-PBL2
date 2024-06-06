@@ -1,9 +1,5 @@
-Analysis & Synthesis Status : Successful - Wed Jun  5 20:34:56 2024
-Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Analysis & Synthesis Status : Failed - Wed Jun 05 23:16:42 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : SistemaDeIrrigacao
-Top-level Entity Name : freq_1
+Top-level Entity Name : mux2_1
 Family : MAX II
-Total logic elements : 26
-Total pins : 3
-Total virtual pins : 0
-UFM blocks : 0 / 1 ( 0 % )

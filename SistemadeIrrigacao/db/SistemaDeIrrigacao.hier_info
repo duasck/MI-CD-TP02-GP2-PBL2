@@ -1,136 +1,19 @@
-|freq_1
-clk => clk.IN1
-clk7seg <= ff_d:dff_25.port1
-clkLeds <= clkLeds.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_0
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_1
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_2
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_3
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_4
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_5
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_6
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_7
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_8
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_9
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_10
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_11
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_12
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_13
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_14
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_15
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_16
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_17
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_18
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_19
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_20
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_21
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_22
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_23
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_24
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|freq_1|ff_d:dff_25
-clk => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|mux2to1
+in0[0] => out.DATAA
+in0[1] => out.DATAA
+in0[2] => out.DATAA
+in0[3] => out.DATAA
+in1[0] => out.DATAB
+in1[1] => out.DATAB
+in1[2] => out.DATAB
+in1[3] => out.DATAB
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+out[0] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] << out.DB_MAX_OUTPUT_PORT_TYPE
 
 

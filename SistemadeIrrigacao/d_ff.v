@@ -1,11 +1,13 @@
-module d_ff (d, rstn, clk, q);  // usando no gatilho
-	input d, rstn, clk;
-	output reg q;
-  
-	always @ (posedge clk or negedge rstn)  
-		if (!rstn)  
-			q <= 0;  
-		else  
-			q <= d;  
-		 
-endmodule  
+module d_ff (
+    input wire clk,
+    input wire reset,
+    input wire D,
+    output reg Q
+);
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            Q <= 1'b0;
+        else
+            Q <= D;
+    end
+endmodule
