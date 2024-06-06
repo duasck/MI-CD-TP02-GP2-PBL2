@@ -1,9 +1,14 @@
-module sistemaNivel (H, M, L, Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve);
-
-input H, M, L;
-//FUNCIONA!!
-output Cheio, Medio, Baixo, Vazio, Erro, Alarme, Ve;
-
+module sistemaNivel (input H,
+	input M,
+	input L,
+	output Cheio,
+	output Medio,
+	output Baixo,
+	output Vazio,
+	output Erro,
+	output Alarme,
+	output Ve
+);
 
 //=================DEFINICOES===========
 wire Hinv, Minv, Linv, VeA, VeB, Al, ErA, ErB;
