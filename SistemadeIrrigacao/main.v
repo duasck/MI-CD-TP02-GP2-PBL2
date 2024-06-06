@@ -44,7 +44,7 @@ module main(
 	deslocamento_coluna_leds dc(.clk(clkLeds), .coluna(coluna));
 	
 	// Atribuição do valor da última coluna
-	assign coluna[4] = 1;
+	//assign coluna[4] = 1;
 	
 	// Atribuição dos valores para as linhas da matriz de LEDs
 	assign linha[0] = !(((switch) && ((M && (coluna[2])) || (V && (coluna[3] || coluna[2] || coluna[3]))))

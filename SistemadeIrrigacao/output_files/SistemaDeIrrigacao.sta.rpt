@@ -1,6 +1,6 @@
 Timing Analyzer report for SistemaDeIrrigacao
-Thu Jun 06 00:23:01 2024
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Thu Jun  6 04:58:38 2024
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
 ---------------------
@@ -17,23 +17,73 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   9. Removal Summary
  10. Minimum Pulse Width Summary
  11. Setup: 'clk'
- 12. Hold: 'clk'
- 13. Setup Transfers
- 14. Hold Transfers
- 15. Report TCCS
- 16. Report RSKM
- 17. Unconstrained Paths Summary
- 18. Clock Status Summary
- 19. Unconstrained Output Ports
- 20. Unconstrained Output Ports
- 21. Timing Analyzer Messages
+ 12. Setup: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+ 13. Setup: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+ 14. Setup: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+ 15. Setup: 'divisorLeds:divisor|d_ff:dff_15|Q'
+ 16. Setup: 'divisorLeds:divisor|d_ff:dff_10|Q'
+ 17. Setup: 'divisorLeds:divisor|d_ff:dff_0|Q'
+ 18. Setup: 'divisorLeds:divisor|d_ff:dff_12|Q'
+ 19. Setup: 'divisorLeds:divisor|d_ff:dff_14|Q'
+ 20. Setup: 'divisorLeds:divisor|d_ff:dff_2|Q'
+ 21. Setup: 'divisorLeds:divisor|d_ff:dff_4|Q'
+ 22. Setup: 'divisorLeds:divisor|d_ff:dff_6|Q'
+ 23. Setup: 'divisorLeds:divisor|d_ff:dff_8|Q'
+ 24. Setup: 'divisorLeds:divisor|d_ff:dff_9|Q'
+ 25. Setup: 'divisorLeds:divisor|d_ff:dff_3|Q'
+ 26. Setup: 'divisorLeds:divisor|d_ff:dff_5|Q'
+ 27. Setup: 'divisorLeds:divisor|d_ff:dff_7|Q'
+ 28. Setup: 'divisorLeds:divisor|d_ff:dff_13|Q'
+ 29. Setup: 'divisorLeds:divisor|d_ff:dff_1|Q'
+ 30. Setup: 'divisorLeds:divisor|d_ff:dff_11|Q'
+ 31. Hold: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+ 32. Hold: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+ 33. Hold: 'clk'
+ 34. Hold: 'divisorLeds:divisor|d_ff:dff_11|Q'
+ 35. Hold: 'divisorLeds:divisor|d_ff:dff_13|Q'
+ 36. Hold: 'divisorLeds:divisor|d_ff:dff_1|Q'
+ 37. Hold: 'divisorLeds:divisor|d_ff:dff_3|Q'
+ 38. Hold: 'divisorLeds:divisor|d_ff:dff_5|Q'
+ 39. Hold: 'divisorLeds:divisor|d_ff:dff_7|Q'
+ 40. Hold: 'divisorLeds:divisor|d_ff:dff_9|Q'
+ 41. Hold: 'divisorLeds:divisor|d_ff:dff_14|Q'
+ 42. Hold: 'divisorLeds:divisor|d_ff:dff_2|Q'
+ 43. Hold: 'divisorLeds:divisor|d_ff:dff_4|Q'
+ 44. Hold: 'divisorLeds:divisor|d_ff:dff_6|Q'
+ 45. Hold: 'divisorLeds:divisor|d_ff:dff_8|Q'
+ 46. Hold: 'divisorLeds:divisor|d_ff:dff_0|Q'
+ 47. Hold: 'divisorLeds:divisor|d_ff:dff_12|Q'
+ 48. Hold: 'divisorLeds:divisor|d_ff:dff_10|Q'
+ 49. Hold: 'divisorLeds:divisor|d_ff:dff_15|Q'
+ 50. Hold: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+ 51. Recovery: 'clk'
+ 52. Recovery: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+ 53. Recovery: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+ 54. Recovery: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+ 55. Removal: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+ 56. Removal: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+ 57. Removal: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+ 58. Removal: 'clk'
+ 59. Setup Transfers
+ 60. Hold Transfers
+ 61. Recovery Transfers
+ 62. Removal Transfers
+ 63. Report TCCS
+ 64. Report RSKM
+ 65. Unconstrained Paths Summary
+ 66. Clock Status Summary
+ 67. Unconstrained Input Ports
+ 68. Unconstrained Output Ports
+ 69. Unconstrained Input Ports
+ 70. Unconstrained Output Ports
+ 71. Timing Analyzer Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -50,18 +100,18 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                     ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                              ;
-; Revision Name         ; SistemaDeIrrigacao                                  ;
-; Device Family         ; MAX II                                              ;
-; Device Name           ; EPM240T100C5                                        ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Slow Model                                          ;
-; Rise/Fall Delays      ; Unavailable                                         ;
-+-----------------------+-----------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; SistemaDeIrrigacao                                     ;
+; Device Family         ; MAX II                                                 ;
+; Device Name           ; EPM240T100C5                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Slow Model                                             ;
+; Rise/Fall Delays      ; Unavailable                                            ;
++-----------------------+--------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -69,118 +119,901 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                          ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
-; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                           ;
++-----------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------+
+; Clock Name                              ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                     ;
++-----------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------+
+; clk                                     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                                     ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_0|Q }        ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_1|Q }        ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_2|Q }        ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_3|Q }        ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_4|Q }        ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_5|Q }        ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_6|Q }        ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_7|Q }        ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_8|Q }        ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_9|Q }        ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_10|Q }       ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_11|Q }       ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_12|Q }       ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_13|Q }       ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_14|Q }       ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisorLeds:divisor|d_ff:dff_15|Q }       ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { matriz7seg:m7|down_count:ds|jk_ff:ff0|Q } ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { matriz7seg:m7|down_count:um|jk_ff:ff0|Q } ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { matriz7seg:m7|down_count:us|jk_ff:ff0|Q } ;
++-----------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Fmax Summary                                                                                              ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 455.37 MHz ; 304.04 MHz      ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Fmax Summary                                                                  ;
++------------+-----------------+-----------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                              ; Note ;
++------------+-----------------+-----------------------------------------+------+
+; 221.98 MHz ; 221.98 MHz      ; clk                                     ;      ;
+; 294.99 MHz ; 294.99 MHz      ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ;      ;
+; 316.66 MHz ; 316.66 MHz      ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ;      ;
+; 356.38 MHz ; 356.38 MHz      ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ;      ;
+; 450.86 MHz ; 450.86 MHz      ; divisorLeds:divisor|d_ff:dff_15|Q       ;      ;
++------------+-----------------+-----------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+--------------------------------+
-; Setup Summary                  ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clk   ; -1.196 ; -5.242        ;
-+-------+--------+---------------+
++------------------------------------------------------------------+
+; Setup Summary                                                    ;
++-----------------------------------------+--------+---------------+
+; Clock                                   ; Slack  ; End Point TNS ;
++-----------------------------------------+--------+---------------+
+; clk                                     ; -8.161 ; -17.426       ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; -2.390 ; -7.473        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -2.158 ; -6.049        ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -1.806 ; -5.086        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; -1.218 ; -5.304        ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; 0.457  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; 0.466  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; 0.466  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; 0.467  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; 0.467  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; 0.467  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; 0.467  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; 0.467  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; 0.810  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; 0.819  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; 0.819  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; 0.819  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; 0.825  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; 0.825  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; 1.405  ; 0.000         ;
++-----------------------------------------+--------+---------------+
 
 
-+-------------------------------+
-; Hold Summary                  ;
-+-------+-------+---------------+
-; Clock ; Slack ; End Point TNS ;
-+-------+-------+---------------+
-; clk   ; 1.394 ; 0.000         ;
-+-------+-------+---------------+
++------------------------------------------------------------------+
+; Hold Summary                                                     ;
++-----------------------------------------+--------+---------------+
+; Clock                                   ; Slack  ; End Point TNS ;
++-----------------------------------------+--------+---------------+
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -5.291 ; -16.595       ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -2.299 ; -7.608        ;
+; clk                                     ; -2.006 ; -8.037        ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; -1.459 ; -1.459        ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; -0.879 ; -0.879        ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; -0.879 ; -0.879        ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; -0.873 ; -0.873        ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; -0.873 ; -0.873        ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; -0.873 ; -0.873        ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; -0.864 ; -0.864        ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; -0.521 ; -0.521        ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; -0.521 ; -0.521        ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; -0.521 ; -0.521        ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; -0.521 ; -0.521        ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; -0.521 ; -0.521        ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; -0.520 ; -0.520        ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; -0.520 ; -0.520        ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; -0.511 ; -0.511        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; 1.399  ; 0.000         ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.945  ; 0.000         ;
++-----------------------------------------+--------+---------------+
 
 
---------------------
-; Recovery Summary ;
---------------------
-No paths to report.
++------------------------------------------------------------------+
+; Recovery Summary                                                 ;
++-----------------------------------------+--------+---------------+
+; Clock                                   ; Slack  ; End Point TNS ;
++-----------------------------------------+--------+---------------+
+; clk                                     ; -2.544 ; -10.176       ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -2.394 ; -9.576        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; -1.521 ; -4.575        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -1.034 ; -2.852        ;
++-----------------------------------------+--------+---------------+
 
 
--------------------
-; Removal Summary ;
--------------------
-No paths to report.
++-----------------------------------------------------------------+
+; Removal Summary                                                 ;
++-----------------------------------------+-------+---------------+
+; Clock                                   ; Slack ; End Point TNS ;
++-----------------------------------------+-------+---------------+
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.174 ; 0.000         ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.464 ; 0.000         ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 2.840 ; 0.000         ;
+; clk                                     ; 2.990 ; 0.000         ;
++-----------------------------------------+-------+---------------+
 
 
-+--------------------------------+
-; Minimum Pulse Width Summary    ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clk   ; -2.289 ; -2.289        ;
-+-------+--------+---------------+
++------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                      ;
++-----------------------------------------+--------+---------------+
+; Clock                                   ; Slack  ; End Point TNS ;
++-----------------------------------------+--------+---------------+
+; clk                                     ; -2.289 ; -2.289        ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; 0.234  ; 0.000         ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; 0.234  ; 0.000         ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.234  ; 0.000         ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.234  ; 0.000         ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.234  ; 0.000         ;
++-----------------------------------------+--------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Setup: 'clk'                                                                                                   ;
-+--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; -1.196 ; coluna[0]~reg0 ; coluna[1]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.863      ;
-; -1.194 ; coluna[4]~reg0 ; coluna[0]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.861      ;
-; -0.953 ; coluna[2]~reg0 ; coluna[3]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.620      ;
-; -0.951 ; coluna[3]~reg0 ; coluna[4]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.618      ;
-; -0.948 ; coluna[1]~reg0 ; coluna[2]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.615      ;
-+--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                                                                                ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; -8.161 ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 1.000        ; -3.241     ; 5.587      ;
+; -8.118 ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 1.000        ; -2.629     ; 6.156      ;
+; -7.978 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 1.000        ; -2.629     ; 6.016      ;
+; -7.747 ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 1.000        ; -3.241     ; 5.173      ;
+; -7.585 ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 1.000        ; -2.629     ; 5.623      ;
+; -7.540 ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 1.000        ; -3.241     ; 4.966      ;
+; -7.250 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 1.000        ; -2.629     ; 5.288      ;
+; -4.898 ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; -0.527     ; 5.038      ;
+; -4.625 ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; -0.527     ; 4.765      ;
+; -4.611 ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; -0.527     ; 4.751      ;
+; -3.505 ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 1.000        ; 0.000      ; 4.172      ;
+; -3.284 ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 1.000        ; 0.000      ; 3.951      ;
+; -2.956 ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 1.000        ; 0.000      ; 3.623      ;
+; -2.203 ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.870      ;
+; -1.960 ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.627      ;
+; -1.956 ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.623      ;
+; -1.946 ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.613      ;
+; -1.801 ; matriz7seg:m7|lo                        ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.468      ;
+; -1.588 ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.255      ;
+; -1.572 ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 2.239      ;
+; -1.418 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 5.309      ;
+; -1.269 ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 1.936      ;
+; -1.264 ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 1.931      ;
+; -1.194 ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; clk                                     ; clk         ; 1.000        ; 0.000      ; 1.861      ;
+; -0.918 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 5.309      ;
+; -0.553 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 4.444      ;
+; -0.446 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 4.337      ;
+; -0.053 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 4.444      ;
+; 0.054  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 4.337      ;
+; 0.463  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 3.428      ;
+; 0.963  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 3.428      ;
+; 1.373  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 2.518      ;
+; 1.753  ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; clk         ; 0.500        ; 3.348      ; 2.138      ;
+; 1.873  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 2.518      ;
+; 1.941  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 1.950      ;
+; 1.952  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.500        ; 3.348      ; 1.939      ;
+; 2.253  ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; clk         ; 1.000        ; 3.348      ; 2.138      ;
+; 2.441  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 1.950      ;
+; 2.452  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 1.000        ; 3.348      ; 1.939      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Hold: 'clk'                                                                                                   ;
-+-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; 1.394 ; coluna[1]~reg0 ; coluna[2]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.615      ;
-; 1.397 ; coluna[3]~reg0 ; coluna[4]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.618      ;
-; 1.399 ; coluna[2]~reg0 ; coluna[3]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.620      ;
-; 1.640 ; coluna[4]~reg0 ; coluna[0]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.861      ;
-; 1.642 ; coluna[0]~reg0 ; coluna[1]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.863      ;
-+-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'                                                                                                                                                                        ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -2.390 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 3.057      ;
+; -2.301 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.968      ;
+; -1.863 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.530      ;
+; -1.708 ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.375      ;
+; -1.698 ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.365      ;
+; -1.677 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.344      ;
+; -1.667 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.334      ;
+; -1.528 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.195      ;
+; -1.522 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.189      ;
+; -1.499 ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.166      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
 
 
-+-------------------------------------------------------------------+
-; Setup Transfers                                                   ;
-+------------+----------+----------+----------+----------+----------+
-; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 5        ; 0        ; 0        ; 0        ;
-+------------+----------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'                                                                                                                                                                        ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -2.158 ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.825      ;
+; -2.136 ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.803      ;
+; -1.836 ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.503      ;
+; -1.755 ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.422      ;
+; -1.690 ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.357      ;
+; -0.632 ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 1.299      ;
+; 3.246  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.500        ; 6.589      ; 3.886      ;
+; 3.641  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.500        ; 6.589      ; 3.491      ;
+; 3.746  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 6.589      ; 3.886      ;
+; 4.141  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 6.589      ; 3.491      ;
+; 4.255  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.500        ; 6.589      ; 2.877      ;
+; 4.755  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 6.589      ; 2.877      ;
+; 5.237  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.500        ; 6.589      ; 1.895      ;
+; 5.737  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 6.589      ; 1.895      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'                                                                                                                                                                        ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -1.806 ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.473      ;
+; -1.774 ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.441      ;
+; -1.515 ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.182      ;
+; -1.506 ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 2.173      ;
+; -1.325 ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 1.992      ;
+; -1.313 ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.000      ; 1.980      ;
+; 1.482  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.500        ; 3.875      ; 2.936      ;
+; 1.631  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.500        ; 3.875      ; 2.787      ;
+; 1.982  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 3.875      ; 2.936      ;
+; 2.034  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.500        ; 3.875      ; 2.384      ;
+; 2.131  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 3.875      ; 2.787      ;
+; 2.245  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.500        ; 3.875      ; 2.173      ;
+; 2.534  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 3.875      ; 2.384      ;
+; 2.745  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 3.875      ; 2.173      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_15|Q'                                                                                                                                                              ;
++--------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                             ; To Node                               ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -1.218 ; deslocamento_coluna_leds:dc|coluna[4] ; deslocamento_coluna_leds:dc|coluna[0] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 1.000        ; 0.000      ; 1.885      ;
+; -1.196 ; deslocamento_coluna_leds:dc|coluna[0] ; deslocamento_coluna_leds:dc|coluna[1] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 1.000        ; 0.000      ; 1.863      ;
+; -0.969 ; deslocamento_coluna_leds:dc|coluna[2] ; deslocamento_coluna_leds:dc|coluna[3] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 1.000        ; 0.000      ; 1.636      ;
+; -0.968 ; deslocamento_coluna_leds:dc|coluna[3] ; deslocamento_coluna_leds:dc|coluna[4] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 1.000        ; 0.000      ; 1.635      ;
+; -0.953 ; deslocamento_coluna_leds:dc|coluna[1] ; deslocamento_coluna_leds:dc|coluna[2] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 1.000        ; 0.000      ; 1.620      ;
++--------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_10|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 0.457 ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; 0.500        ; 1.793      ; 1.879      ;
+; 0.957 ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; 1.000        ; 1.793      ; 1.879      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_0|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.466 ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_0|Q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_0|Q ; 1.000        ; 1.784      ; 1.861      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_12|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 0.466 ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; 0.500        ; 1.784      ; 1.861      ;
+; 0.966 ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; 1.000        ; 1.784      ; 1.861      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_14|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 0.467 ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; 1.000        ; 1.785      ; 1.861      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_2|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.467 ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; 1.000        ; 1.785      ; 1.861      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_4|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.467 ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; 1.000        ; 1.785      ; 1.861      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_6|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.467 ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; 1.000        ; 1.785      ; 1.861      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_8|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.467 ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; 0.500        ; 1.785      ; 1.861      ;
+; 0.967 ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; 1.000        ; 1.785      ; 1.861      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_9|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.810 ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; 0.500        ; 2.154      ; 1.887      ;
+; 1.310 ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; 1.000        ; 2.154      ; 1.887      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_3|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.819 ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; 1.000        ; 2.154      ; 1.878      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_5|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.819 ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; 1.000        ; 2.154      ; 1.878      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_7|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.819 ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; 0.500        ; 2.154      ; 1.878      ;
+; 1.319 ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; 1.000        ; 2.154      ; 1.878      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_13|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 0.825 ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; 1.000        ; 2.160      ; 1.878      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_1|Q'                                                                                                                                                  ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; 0.825 ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; 0.500        ; 2.160      ; 1.878      ;
+; 1.325 ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; 1.000        ; 2.160      ; 1.878      ;
++-------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisorLeds:divisor|d_ff:dff_11|Q'                                                                                                                                                     ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 1.405 ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; 0.500        ; 3.000      ; 2.138      ;
+; 1.905 ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; 1.000        ; 3.000      ; 2.138      ;
++-------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -5.291 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 6.589      ; 1.895      ;
+; -4.791 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -0.500       ; 6.589      ; 1.895      ;
+; -4.309 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 6.589      ; 2.877      ;
+; -3.809 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -0.500       ; 6.589      ; 2.877      ;
+; -3.695 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 6.589      ; 3.491      ;
+; -3.300 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 6.589      ; 3.886      ;
+; -3.195 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -0.500       ; 6.589      ; 3.491      ;
+; -2.800 ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; -0.500       ; 6.589      ; 3.886      ;
+; 1.078  ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 1.299      ;
+; 2.136  ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.357      ;
+; 2.201  ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.422      ;
+; 2.282  ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.503      ;
+; 2.582  ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.803      ;
+; 2.604  ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.825      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -2.299 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 3.875      ; 2.173      ;
+; -2.088 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 3.875      ; 2.384      ;
+; -1.799 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -0.500       ; 3.875      ; 2.173      ;
+; -1.685 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 3.875      ; 2.787      ;
+; -1.588 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -0.500       ; 3.875      ; 2.384      ;
+; -1.536 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 3.875      ; 2.936      ;
+; -1.185 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -0.500       ; 3.875      ; 2.787      ;
+; -1.036 ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; -0.500       ; 3.875      ; 2.936      ;
+; 1.759  ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 1.980      ;
+; 1.771  ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 1.992      ;
+; 1.952  ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.173      ;
+; 1.961  ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.182      ;
+; 2.220  ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.441      ;
+; 2.252  ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.473      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                                                                                 ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+; -2.006 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 1.939      ;
+; -1.995 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 1.950      ;
+; -1.807 ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; clk         ; 0.000        ; 3.348      ; 2.138      ;
+; -1.506 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 1.939      ;
+; -1.495 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 1.950      ;
+; -1.427 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 2.518      ;
+; -1.307 ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; clk         ; -0.500       ; 3.348      ; 2.138      ;
+; -0.927 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 2.518      ;
+; -0.517 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 3.428      ;
+; -0.285 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 3.660      ;
+; -0.017 ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 3.428      ;
+; 0.111  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 4.056      ;
+; 0.215  ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 3.660      ;
+; 0.611  ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 4.056      ;
+; 1.272  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 0.000        ; 3.348      ; 5.217      ;
+; 1.640  ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 1.861      ;
+; 1.710  ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 1.931      ;
+; 1.715  ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 1.936      ;
+; 1.772  ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; -0.500       ; 3.348      ; 5.217      ;
+; 2.018  ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.239      ;
+; 2.034  ; binary_counter_2bit:comb_117|d_ff:ff0|Q ; binary_counter_2bit:comb_117|d_ff:ff1|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.255      ;
+; 2.247  ; matriz7seg:m7|lo                        ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.468      ;
+; 2.392  ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.613      ;
+; 2.402  ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.623      ;
+; 2.406  ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.627      ;
+; 2.649  ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.870      ;
+; 2.703  ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 0.000        ; 0.000      ; 2.924      ;
+; 3.054  ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 0.000        ; 0.000      ; 3.275      ;
+; 3.265  ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; clk                                     ; clk         ; 0.000        ; 0.000      ; 3.486      ;
+; 4.544  ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; -0.527     ; 4.238      ;
+; 4.551  ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; -0.527     ; 4.245      ;
+; 4.837  ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk         ; 0.000        ; -0.527     ; 4.531      ;
+; 7.499  ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.000        ; -2.629     ; 5.091      ;
+; 7.658  ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.000        ; -2.629     ; 5.250      ;
+; 7.803  ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.000        ; -2.629     ; 5.395      ;
+; 7.818  ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 0.000        ; -3.241     ; 4.798      ;
+; 7.843  ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 0.000        ; -3.241     ; 4.823      ;
+; 8.282  ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk         ; 0.000        ; -3.241     ; 5.262      ;
+; 8.374  ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|lo                        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk         ; 0.000        ; -2.629     ; 5.966      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_11|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -1.459 ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; 0.000        ; 3.000      ; 2.138      ;
+; -0.959 ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; -0.500       ; 3.000      ; 2.138      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_13|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.879 ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; -0.500       ; 2.160      ; 1.878      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_1|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.879 ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; 0.000        ; 2.160      ; 1.878      ;
+; -0.379 ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; -0.500       ; 2.160      ; 1.878      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_3|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.873 ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; -0.500       ; 2.154      ; 1.878      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_5|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.873 ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; -0.500       ; 2.154      ; 1.878      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_7|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.873 ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; 0.000        ; 2.154      ; 1.878      ;
+; -0.373 ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; -0.500       ; 2.154      ; 1.878      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_9|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.864 ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; 0.000        ; 2.154      ; 1.887      ;
+; -0.364 ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; -0.500       ; 2.154      ; 1.887      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_14|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.521 ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_14|Q ; -0.500       ; 1.785      ; 1.861      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_2|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.521 ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_3|Q ; divisorLeds:divisor|d_ff:dff_2|Q ; -0.500       ; 1.785      ; 1.861      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_4|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.521 ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_5|Q ; divisorLeds:divisor|d_ff:dff_4|Q ; -0.500       ; 1.785      ; 1.861      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_6|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.521 ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_7|Q ; divisorLeds:divisor|d_ff:dff_6|Q ; -0.500       ; 1.785      ; 1.861      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_8|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.521 ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; 0.000        ; 1.785      ; 1.861      ;
+; -0.021 ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_9|Q ; divisorLeds:divisor|d_ff:dff_8|Q ; -0.500       ; 1.785      ; 1.861      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_0|Q'                                                                                                                                                    ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                        ; To Node                          ; Launch Clock                     ; Latch Clock                      ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+; -0.520 ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_0|Q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_1|Q ; divisorLeds:divisor|d_ff:dff_0|Q ; -0.500       ; 1.784      ; 1.861      ;
++--------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_12|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.520 ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; 0.000        ; 1.784      ; 1.861      ;
+; -0.020 ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_13|Q ; divisorLeds:divisor|d_ff:dff_12|Q ; -0.500       ; 1.784      ; 1.861      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_10|Q'                                                                                                                                                       ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node                           ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.511 ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; 0.000        ; 1.793      ; 1.879      ;
+; -0.011 ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_11|Q ; divisorLeds:divisor|d_ff:dff_10|Q ; -0.500       ; 1.793      ; 1.879      ;
++--------+-----------------------------------+-----------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisorLeds:divisor|d_ff:dff_15|Q'                                                                                                                                                              ;
++-------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 1.399 ; deslocamento_coluna_leds:dc|coluna[1] ; deslocamento_coluna_leds:dc|coluna[2] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 0.000        ; 0.000      ; 1.620      ;
+; 1.414 ; deslocamento_coluna_leds:dc|coluna[3] ; deslocamento_coluna_leds:dc|coluna[4] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 0.000        ; 0.000      ; 1.635      ;
+; 1.415 ; deslocamento_coluna_leds:dc|coluna[2] ; deslocamento_coluna_leds:dc|coluna[3] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 0.000        ; 0.000      ; 1.636      ;
+; 1.642 ; deslocamento_coluna_leds:dc|coluna[0] ; deslocamento_coluna_leds:dc|coluna[1] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 0.000        ; 0.000      ; 1.863      ;
+; 1.664 ; deslocamento_coluna_leds:dc|coluna[4] ; deslocamento_coluna_leds:dc|coluna[0] ; divisorLeds:divisor|d_ff:dff_15|Q ; divisorLeds:divisor|d_ff:dff_15|Q ; 0.000        ; 0.000      ; 1.885      ;
++-------+---------------------------------------+---------------------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'                                                                                                                                                                        ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; 1.945 ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.166      ;
+; 1.968 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.189      ;
+; 1.974 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.195      ;
+; 2.113 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.334      ;
+; 2.123 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.344      ;
+; 2.144 ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.365      ;
+; 2.154 ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.375      ;
+; 2.309 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.530      ;
+; 2.747 ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 2.968      ;
+; 2.836 ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 0.000      ; 3.057      ;
++-------+-----------------------------------------+-----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'clk'                                                                                                                           ;
++--------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.544 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk          ; clk         ; 1.000        ; 0.000      ; 3.211      ;
+; -2.544 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; clk          ; clk         ; 1.000        ; 0.000      ; 3.211      ;
+; -2.544 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk          ; clk         ; 1.000        ; 0.000      ; 3.211      ;
+; -2.544 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk          ; clk         ; 1.000        ; 0.000      ; 3.211      ;
++--------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'                                                                                                                   ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; -2.394 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.527      ; 3.588      ;
+; -2.394 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.527      ; 3.588      ;
+; -2.394 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.527      ; 3.588      ;
+; -2.394 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 1.000        ; 0.527      ; 3.588      ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'                                                                                                                   ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; -1.521 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 2.629      ; 4.817      ;
+; -1.018 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 2.629      ; 4.314      ;
+; -1.018 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 2.629      ; 4.314      ;
+; -1.018 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 1.000        ; 2.629      ; 4.314      ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'                                                                                                                   ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; -1.034 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 3.241      ; 4.942      ;
+; -0.909 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 3.241      ; 4.817      ;
+; -0.909 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 3.241      ; 4.817      ;
+; 0.272  ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 1.000        ; 3.241      ; 3.636      ;
++--------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'                                                                                                                   ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; 0.174 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 3.241      ; 3.636      ;
+; 1.090 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 3.241      ; 4.552      ;
+; 1.090 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 3.241      ; 4.552      ;
+; 1.131 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:um|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 0.000        ; 3.241      ; 4.593      ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'                                                                                                                   ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; 1.464 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 2.629      ; 4.314      ;
+; 1.464 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 2.629      ; 4.314      ;
+; 1.464 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 2.629      ; 4.314      ;
+; 1.702 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:dm|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 0.000        ; 2.629      ; 4.552      ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'                                                                                                                   ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+; 2.840 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff1|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.527      ; 3.588      ;
+; 2.840 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff3|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.527      ; 3.588      ;
+; 2.840 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.527      ; 3.588      ;
+; 2.840 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:ds|jk_ff:ff2|Q ; clk          ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 0.000        ; 0.527      ; 3.588      ;
++-------+------------------+-----------------------------------------+--------------+-----------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'clk'                                                                                                                           ;
++-------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 2.990 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk          ; clk         ; 0.000        ; 0.000      ; 3.211      ;
+; 2.990 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff1|Q ; clk          ; clk         ; 0.000        ; 0.000      ; 3.211      ;
+; 2.990 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff2|Q ; clk          ; clk         ; 0.000        ; 0.000      ; 3.211      ;
+; 2.990 ; matriz7seg:m7|lo ; matriz7seg:m7|down_count:us|jk_ff:ff3|Q ; clk          ; clk         ; 0.000        ; 0.000      ; 3.211      ;
++-------+------------------+-----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                               ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
+; From Clock                              ; To Clock                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
+; clk                                     ; clk                                     ; 16       ; 0        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; clk                                     ; 1        ; 1        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk                                     ; 8        ; 2        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk                                     ; 10       ; 2        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk                                     ; 12       ; 6        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; divisorLeds:divisor|d_ff:dff_1|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; divisorLeds:divisor|d_ff:dff_2|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; divisorLeds:divisor|d_ff:dff_3|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; divisorLeds:divisor|d_ff:dff_4|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; divisorLeds:divisor|d_ff:dff_5|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; divisorLeds:divisor|d_ff:dff_6|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; divisorLeds:divisor|d_ff:dff_7|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; divisorLeds:divisor|d_ff:dff_8|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; divisorLeds:divisor|d_ff:dff_9|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; divisorLeds:divisor|d_ff:dff_10|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; divisorLeds:divisor|d_ff:dff_11|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; divisorLeds:divisor|d_ff:dff_12|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; divisorLeds:divisor|d_ff:dff_13|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; divisorLeds:divisor|d_ff:dff_14|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; divisorLeds:divisor|d_ff:dff_15|Q       ; 5        ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 6        ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 4        ; 4        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 10       ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 4        ; 4        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 6        ; 0        ; 0        ; 0        ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------+
-; Hold Transfers                                                    ;
-+------------+----------+----------+----------+----------+----------+
-; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 5        ; 0        ; 0        ; 0        ;
-+------------+----------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
+; From Clock                              ; To Clock                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
+; clk                                     ; clk                                     ; 16       ; 0        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; clk                                     ; 1        ; 1        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; clk                                     ; 8        ; 2        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; clk                                     ; 10       ; 2        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; clk                                     ; 12       ; 6        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; divisorLeds:divisor|d_ff:dff_1|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; divisorLeds:divisor|d_ff:dff_2|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; divisorLeds:divisor|d_ff:dff_3|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; divisorLeds:divisor|d_ff:dff_4|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; divisorLeds:divisor|d_ff:dff_5|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; divisorLeds:divisor|d_ff:dff_6|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; divisorLeds:divisor|d_ff:dff_7|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; divisorLeds:divisor|d_ff:dff_8|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; divisorLeds:divisor|d_ff:dff_9|Q        ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; divisorLeds:divisor|d_ff:dff_10|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; divisorLeds:divisor|d_ff:dff_11|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; divisorLeds:divisor|d_ff:dff_12|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; divisorLeds:divisor|d_ff:dff_13|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; divisorLeds:divisor|d_ff:dff_14|Q       ; 1        ; 1        ; 0        ; 0        ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; divisorLeds:divisor|d_ff:dff_15|Q       ; 5        ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 6        ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 4        ; 4        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 10       ; 0        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 4        ; 4        ; 0        ; 0        ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 6        ; 0        ; 0        ; 0        ;
++-----------------------------------------+-----------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                               ;
++------------+-----------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------------------------------------+----------+----------+----------+----------+
+; clk        ; clk                                     ; 4        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 7        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 5        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 4        ; 0        ; 0        ; 0        ;
++------------+-----------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                ;
++------------+-----------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                                ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-----------------------------------------+----------+----------+----------+----------+
+; clk        ; clk                                     ; 4        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; 7        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; 5        ; 0        ; 0        ; 0        ;
+; clk        ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; 4        ; 0        ; 0        ; 0        ;
++------------+-----------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -203,20 +1036,55 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 5     ; 5    ;
-; Unconstrained Output Port Paths ; 5     ; 5    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 88    ; 88   ;
+; Unconstrained Output Ports      ; 26    ; 26   ;
+; Unconstrained Output Port Paths ; 215   ; 215  ;
 +---------------------------------+-------+------+
 
 
-+-------------------------------------+
-; Clock Status Summary                ;
-+--------+-------+------+-------------+
-; Target ; Clock ; Type ; Status      ;
-+--------+-------+------+-------------+
-; clk    ; clk   ; Base ; Constrained ;
-+--------+-------+------+-------------+
++--------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                   ;
++-----------------------------------------+-----------------------------------------+------+-------------+
+; Target                                  ; Clock                                   ; Type ; Status      ;
++-----------------------------------------+-----------------------------------------+------+-------------+
+; clk                                     ; clk                                     ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_0|Q        ; divisorLeds:divisor|d_ff:dff_0|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_1|Q        ; divisorLeds:divisor|d_ff:dff_1|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_2|Q        ; divisorLeds:divisor|d_ff:dff_2|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_3|Q        ; divisorLeds:divisor|d_ff:dff_3|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_4|Q        ; divisorLeds:divisor|d_ff:dff_4|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_5|Q        ; divisorLeds:divisor|d_ff:dff_5|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_6|Q        ; divisorLeds:divisor|d_ff:dff_6|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_7|Q        ; divisorLeds:divisor|d_ff:dff_7|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_8|Q        ; divisorLeds:divisor|d_ff:dff_8|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_9|Q        ; divisorLeds:divisor|d_ff:dff_9|Q        ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_10|Q       ; divisorLeds:divisor|d_ff:dff_10|Q       ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_11|Q       ; divisorLeds:divisor|d_ff:dff_11|Q       ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_12|Q       ; divisorLeds:divisor|d_ff:dff_12|Q       ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_13|Q       ; divisorLeds:divisor|d_ff:dff_13|Q       ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_14|Q       ; divisorLeds:divisor|d_ff:dff_14|Q       ; Base ; Constrained ;
+; divisorLeds:divisor|d_ff:dff_15|Q       ; divisorLeds:divisor|d_ff:dff_15|Q       ; Base ; Constrained ;
+; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; matriz7seg:m7|down_count:ds|jk_ff:ff0|Q ; Base ; Constrained ;
+; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; matriz7seg:m7|down_count:um|jk_ff:ff0|Q ; Base ; Constrained ;
+; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; matriz7seg:m7|down_count:us|jk_ff:ff0|Q ; Base ; Constrained ;
++-----------------------------------------+-----------------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reiniciar  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -224,12 +1092,49 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; V           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; clkLeds     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; e           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; f           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; g           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; H          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; L          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; M          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ua         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Us         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reiniciar  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
@@ -237,11 +1142,32 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; Alarme      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Bs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Erro        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; V           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Ve          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Vs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; b           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; clkLeds     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; coluna[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; e           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; f           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; g           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[3]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[4]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[5]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; linha[6]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -250,12 +1176,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 06 00:23:00 2024
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Processing started: Thu Jun  6 04:58:37 2024
 Info: Command: quartus_sta SistemaDeIrrigacao -c SistemaDeIrrigacao
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (334003): Started post-fitting delay annotation
@@ -263,31 +1189,119 @@ Info (334004): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'SistemaDeIrrigacao.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_14|Q divisorLeds:divisor|d_ff:dff_14|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_15|Q divisorLeds:divisor|d_ff:dff_15|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_13|Q divisorLeds:divisor|d_ff:dff_13|Q
     Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name matriz7seg:m7|down_count:us|jk_ff:ff0|Q matriz7seg:m7|down_count:us|jk_ff:ff0|Q
+    Info (332105): create_clock -period 1.000 -name matriz7seg:m7|down_count:ds|jk_ff:ff0|Q matriz7seg:m7|down_count:ds|jk_ff:ff0|Q
+    Info (332105): create_clock -period 1.000 -name matriz7seg:m7|down_count:um|jk_ff:ff0|Q matriz7seg:m7|down_count:um|jk_ff:ff0|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_12|Q divisorLeds:divisor|d_ff:dff_12|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_11|Q divisorLeds:divisor|d_ff:dff_11|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_10|Q divisorLeds:divisor|d_ff:dff_10|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_9|Q divisorLeds:divisor|d_ff:dff_9|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_8|Q divisorLeds:divisor|d_ff:dff_8|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_7|Q divisorLeds:divisor|d_ff:dff_7|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_6|Q divisorLeds:divisor|d_ff:dff_6|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_5|Q divisorLeds:divisor|d_ff:dff_5|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_4|Q divisorLeds:divisor|d_ff:dff_4|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_3|Q divisorLeds:divisor|d_ff:dff_3|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_2|Q divisorLeds:divisor|d_ff:dff_2|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_1|Q divisorLeds:divisor|d_ff:dff_1|Q
+    Info (332105): create_clock -period 1.000 -name divisorLeds:divisor|d_ff:dff_0|Q divisorLeds:divisor|d_ff:dff_0|Q
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.196
+Info (332146): Worst-case setup slack is -8.161
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.196              -5.242 clk 
-Info (332146): Worst-case hold slack is 1.394
+    Info (332119):    -8.161             -17.426 clk 
+    Info (332119):    -2.390              -7.473 matriz7seg:m7|down_count:um|jk_ff:ff0|Q 
+    Info (332119):    -2.158              -6.049 matriz7seg:m7|down_count:ds|jk_ff:ff0|Q 
+    Info (332119):    -1.806              -5.086 matriz7seg:m7|down_count:us|jk_ff:ff0|Q 
+    Info (332119):    -1.218              -5.304 divisorLeds:divisor|d_ff:dff_15|Q 
+    Info (332119):     0.457               0.000 divisorLeds:divisor|d_ff:dff_10|Q 
+    Info (332119):     0.466               0.000 divisorLeds:divisor|d_ff:dff_0|Q 
+    Info (332119):     0.466               0.000 divisorLeds:divisor|d_ff:dff_12|Q 
+    Info (332119):     0.467               0.000 divisorLeds:divisor|d_ff:dff_14|Q 
+    Info (332119):     0.467               0.000 divisorLeds:divisor|d_ff:dff_2|Q 
+    Info (332119):     0.467               0.000 divisorLeds:divisor|d_ff:dff_4|Q 
+    Info (332119):     0.467               0.000 divisorLeds:divisor|d_ff:dff_6|Q 
+    Info (332119):     0.467               0.000 divisorLeds:divisor|d_ff:dff_8|Q 
+    Info (332119):     0.810               0.000 divisorLeds:divisor|d_ff:dff_9|Q 
+    Info (332119):     0.819               0.000 divisorLeds:divisor|d_ff:dff_3|Q 
+    Info (332119):     0.819               0.000 divisorLeds:divisor|d_ff:dff_5|Q 
+    Info (332119):     0.819               0.000 divisorLeds:divisor|d_ff:dff_7|Q 
+    Info (332119):     0.825               0.000 divisorLeds:divisor|d_ff:dff_13|Q 
+    Info (332119):     0.825               0.000 divisorLeds:divisor|d_ff:dff_1|Q 
+    Info (332119):     1.405               0.000 divisorLeds:divisor|d_ff:dff_11|Q 
+Info (332146): Worst-case hold slack is -5.291
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.394               0.000 clk 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+    Info (332119):    -5.291             -16.595 matriz7seg:m7|down_count:ds|jk_ff:ff0|Q 
+    Info (332119):    -2.299              -7.608 matriz7seg:m7|down_count:us|jk_ff:ff0|Q 
+    Info (332119):    -2.006              -8.037 clk 
+    Info (332119):    -1.459              -1.459 divisorLeds:divisor|d_ff:dff_11|Q 
+    Info (332119):    -0.879              -0.879 divisorLeds:divisor|d_ff:dff_13|Q 
+    Info (332119):    -0.879              -0.879 divisorLeds:divisor|d_ff:dff_1|Q 
+    Info (332119):    -0.873              -0.873 divisorLeds:divisor|d_ff:dff_3|Q 
+    Info (332119):    -0.873              -0.873 divisorLeds:divisor|d_ff:dff_5|Q 
+    Info (332119):    -0.873              -0.873 divisorLeds:divisor|d_ff:dff_7|Q 
+    Info (332119):    -0.864              -0.864 divisorLeds:divisor|d_ff:dff_9|Q 
+    Info (332119):    -0.521              -0.521 divisorLeds:divisor|d_ff:dff_14|Q 
+    Info (332119):    -0.521              -0.521 divisorLeds:divisor|d_ff:dff_2|Q 
+    Info (332119):    -0.521              -0.521 divisorLeds:divisor|d_ff:dff_4|Q 
+    Info (332119):    -0.521              -0.521 divisorLeds:divisor|d_ff:dff_6|Q 
+    Info (332119):    -0.521              -0.521 divisorLeds:divisor|d_ff:dff_8|Q 
+    Info (332119):    -0.520              -0.520 divisorLeds:divisor|d_ff:dff_0|Q 
+    Info (332119):    -0.520              -0.520 divisorLeds:divisor|d_ff:dff_12|Q 
+    Info (332119):    -0.511              -0.511 divisorLeds:divisor|d_ff:dff_10|Q 
+    Info (332119):     1.399               0.000 divisorLeds:divisor|d_ff:dff_15|Q 
+    Info (332119):     1.945               0.000 matriz7seg:m7|down_count:um|jk_ff:ff0|Q 
+Info (332146): Worst-case recovery slack is -2.544
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.544             -10.176 clk 
+    Info (332119):    -2.394              -9.576 matriz7seg:m7|down_count:us|jk_ff:ff0|Q 
+    Info (332119):    -1.521              -4.575 matriz7seg:m7|down_count:um|jk_ff:ff0|Q 
+    Info (332119):    -1.034              -2.852 matriz7seg:m7|down_count:ds|jk_ff:ff0|Q 
+Info (332146): Worst-case removal slack is 0.174
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.174               0.000 matriz7seg:m7|down_count:ds|jk_ff:ff0|Q 
+    Info (332119):     1.464               0.000 matriz7seg:m7|down_count:um|jk_ff:ff0|Q 
+    Info (332119):     2.840               0.000 matriz7seg:m7|down_count:us|jk_ff:ff0|Q 
+    Info (332119):     2.990               0.000 clk 
 Info (332146): Worst-case minimum pulse width slack is -2.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -2.289              -2.289 clk 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_0|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_10|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_11|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_12|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_13|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_14|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_15|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_1|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_2|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_3|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_4|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_5|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_6|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_7|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_8|Q 
+    Info (332119):     0.234               0.000 divisorLeds:divisor|d_ff:dff_9|Q 
+    Info (332119):     0.234               0.000 matriz7seg:m7|down_count:ds|jk_ff:ff0|Q 
+    Info (332119):     0.234               0.000 matriz7seg:m7|down_count:um|jk_ff:ff0|Q 
+    Info (332119):     0.234               0.000 matriz7seg:m7|down_count:us|jk_ff:ff0|Q 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4675 megabytes
-    Info: Processing ended: Thu Jun 06 00:23:01 2024
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Thu Jun  6 04:58:38 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

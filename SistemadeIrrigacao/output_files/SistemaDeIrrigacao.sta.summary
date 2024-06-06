@@ -3,15 +3,275 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'clk'
-Slack : -1.196
-TNS   : -5.242
+Slack : -8.161
+TNS   : -17.426
+
+Type  : Setup 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+Slack : -2.390
+TNS   : -7.473
+
+Type  : Setup 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+Slack : -2.158
+TNS   : -6.049
+
+Type  : Setup 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+Slack : -1.806
+TNS   : -5.086
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_15|Q'
+Slack : -1.218
+TNS   : -5.304
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_10|Q'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_0|Q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_12|Q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_14|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_2|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_4|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_6|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_8|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_9|Q'
+Slack : 0.810
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_3|Q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_5|Q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_7|Q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_13|Q'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_1|Q'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Setup 'divisorLeds:divisor|d_ff:dff_11|Q'
+Slack : 1.405
+TNS   : 0.000
+
+Type  : Hold 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+Slack : -5.291
+TNS   : -16.595
+
+Type  : Hold 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+Slack : -2.299
+TNS   : -7.608
 
 Type  : Hold 'clk'
-Slack : 1.394
+Slack : -2.006
+TNS   : -8.037
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_11|Q'
+Slack : -1.459
+TNS   : -1.459
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_13|Q'
+Slack : -0.879
+TNS   : -0.879
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_1|Q'
+Slack : -0.879
+TNS   : -0.879
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_3|Q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_5|Q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_7|Q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_9|Q'
+Slack : -0.864
+TNS   : -0.864
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_14|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_2|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_4|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_6|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_8|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_0|Q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_12|Q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_10|Q'
+Slack : -0.511
+TNS   : -0.511
+
+Type  : Hold 'divisorLeds:divisor|d_ff:dff_15|Q'
+Slack : 1.399
+TNS   : 0.000
+
+Type  : Hold 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+Slack : 1.945
+TNS   : 0.000
+
+Type  : Recovery 'clk'
+Slack : -2.544
+TNS   : -10.176
+
+Type  : Recovery 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+Slack : -2.394
+TNS   : -9.576
+
+Type  : Recovery 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+Slack : -1.521
+TNS   : -4.575
+
+Type  : Recovery 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+Slack : -1.034
+TNS   : -2.852
+
+Type  : Removal 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Removal 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+Slack : 1.464
+TNS   : 0.000
+
+Type  : Removal 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+Slack : 2.840
+TNS   : 0.000
+
+Type  : Removal 'clk'
+Slack : 2.990
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clk'
 Slack : -2.289
 TNS   : -2.289
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_0|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_10|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_11|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_12|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_13|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_14|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_15|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_1|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_2|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_3|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_4|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_5|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_6|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_7|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_8|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisorLeds:divisor|d_ff:dff_9|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matriz7seg:m7|down_count:ds|jk_ff:ff0|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matriz7seg:m7|down_count:um|jk_ff:ff0|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'matriz7seg:m7|down_count:us|jk_ff:ff0|Q'
+Slack : 0.234
+TNS   : 0.000
 
 ------------------------------------------------------------
